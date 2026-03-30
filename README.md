@@ -1,4 +1,5 @@
-# Joan Sebastián Díaz
+# Joan Sebastián Díaz Gómez
+
 **GIS Backend Engineer · Bogotá, Colombia**
 
 [![GIS](https://img.shields.io/badge/GIS-ArcGIS%20Enterprise-00e5a0?style=flat-square&logoColor=white)](https://www.esri.com/)
@@ -20,17 +21,17 @@ I am a backend engineer and development team lead at **Procalculo**, an ESRI Par
 
 ## Production Systems
 
-### 🌿 ABACO — Deforestation Analysis Platform
+### 🌿 [ABACO](https://abaco.procalculo.com/) — Deforestation Analysis Platform
 > *Satellite-based change detection · Military & environmental agencies*
 
 A deforestation monitoring system processing multi-temporal **Sentinel satellite imagery** to detect, classify, and track forest loss at scale. It runs NDVI change detection via **ArcPy geoprocessing services**, pushes detected polygons to ArcGIS Enterprise hosted feature layers, and surfaces results through a Django REST API. Deployed on **AWS EKS**.
 
-### 🛰️ Prisma API — Satellite Imagery API
+### 🛰️ [Prisma API](https://prisma.procalculo.com/docu/) — Satellite Imagery API
 > *Unified multi-source imagery access · Planet · Capella SAR*
 
 A unified imagery API that abstracts **Planet optical** and **Capella SAR** data behind a single Django REST surface, using **ArcGIS image services** for tile caching and on-the-fly raster rendering. Designed for e-commerce-style imagery purchasing workflows with CRM integration.
 
-### 🗺️ Mapas.co — Geospatial Web Platform
+### 🗺️ [Mapas.co](https://mapas.procalculo.com/) — Geospatial Web Platform
 > *Government & enterprise clients · Angular · ArcGIS Enterprise*
 
 A geospatial web platform wrapping ArcGIS Enterprise feature and map services in a clean **Python middleware layer**, consumed by Angular and React frontends. Enables clients to query, filter, and visualize authoritative spatial datasets without direct ESRI dependency.
