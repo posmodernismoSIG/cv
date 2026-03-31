@@ -96,14 +96,14 @@ nav{position:fixed;inset:0 0 auto;z-index:100;display:flex;align-items:center;
   vertical-align:text-bottom;animation:blink 1s step-end infinite}
 
 /* SECTIONS */
-.sec{padding:6rem 3.5rem}
+.sec{padding:6rem 3.5rem;overflow:hidden}
 .seca{background:linear-gradient(180deg,transparent,var(--ink2) 15%,var(--ink2) 85%,transparent)}
 @media(max-width:880px){.sec{padding:4rem 1.5rem}}
 
 /* SECTION HEADER */
 .sh{display:flex;align-items:center;gap:1.5rem;margin-bottom:3.5rem}
 .sn{font-family:var(--M);font-size:.58rem;color:var(--jade);letter-spacing:.22em}
-.st{font-family:var(--H);font-size:clamp(2.2rem,4vw,3.4rem);
+.s-title{font-family:var(--H);font-size:clamp(2.2rem,4vw,3.4rem);
   letter-spacing:.06em;color:var(--chalk);line-height:1}
 .sr{flex:1;height:1px;background:var(--border)}
 
@@ -176,10 +176,11 @@ nav{position:fixed;inset:0 0 auto;z-index:100;display:flex;align-items:center;
 .aa{text-align:center;color:var(--jade);font-size:.72rem;opacity:.45;padding:.05rem 0}
 
 /* ARCGIS CARDS */
-.agg{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
+.agg{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;width:100%}
 .agc{background:var(--ink2);border:1px solid var(--border);
   padding:1.6rem;display:flex;flex-direction:column;gap:.9rem;
-  transition:border-color .3s,transform .3s}
+  transition:border-color .3s,transform .3s;
+  min-width:0;overflow:hidden;width:100%}
 .agc:hover{border-color:var(--border2);transform:translateY(-3px)}
 .agh{display:flex;align-items:flex-start;gap:.75rem;flex-wrap:wrap}
 .ago{color:var(--jade);font-size:.9rem;margin-top:.1rem;flex-shrink:0}
@@ -193,18 +194,37 @@ nav{position:fixed;inset:0 0 auto;z-index:100;display:flex;align-items:center;
 @media(max-width:880px){.agg{grid-template-columns:1fr}}
 
 /* CODE BLOCKS */
-.cb{background:#050b0f;border:1px solid var(--border);overflow:hidden}
+.cb{background:#050b0f;border:1px solid var(--border);
+  overflow:hidden;width:100%;max-width:100%}
 .cbr{display:flex;align-items:center;gap:.4rem;padding:.38rem .85rem;
   background:var(--ink3);border-bottom:1px solid var(--border);
-  font-family:var(--M);font-size:.56rem;color:var(--chalk3);letter-spacing:.1em}
+  font-family:var(--M)!important;font-size:.56rem;color:var(--chalk3);letter-spacing:.1em}
 .cbl{color:var(--jade);text-transform:uppercase}
-.cb pre{padding:.85rem 1rem;overflow-x:auto;margin:0}
-.cb code{font-family:var(--M);font-size:.63rem;line-height:1.8;
-  color:var(--chalk2);display:block;white-space:pre}
-.cb code span{font-family:var(--M)!important;font-size:inherit!important;
-  font-weight:inherit!important;text-transform:none!important;letter-spacing:0!important}
-.kw{color:var(--ice)}.st{color:var(--amber)}.vl{color:#c77dff}
-.cm{color:var(--chalk3);font-style:italic}
+.cb pre{padding:.85rem 1rem;overflow-x:auto;margin:0;max-width:100%;
+  word-break:normal;overflow-wrap:normal}
+.cb code{
+  font-family:'JetBrains Mono',monospace!important;
+  font-size:.63rem!important;line-height:1.8!important;
+  color:var(--chalk2)!important;display:block;white-space:pre;
+  letter-spacing:0!important;text-transform:none!important;
+  font-weight:400!important;font-style:normal!important}
+/* Scoped syntax highlight — cx- prefix prevents any global collision */
+.cx-kw{color:var(--ice)!important;
+  font-family:'JetBrains Mono',monospace!important;
+  font-size:inherit!important;font-weight:inherit!important;
+  text-transform:none!important;letter-spacing:0!important}
+.cx-st{color:var(--amber)!important;
+  font-family:'JetBrains Mono',monospace!important;
+  font-size:inherit!important;font-weight:inherit!important;
+  text-transform:none!important;letter-spacing:0!important}
+.cx-vl{color:#c77dff!important;
+  font-family:'JetBrains Mono',monospace!important;
+  font-size:inherit!important;font-weight:inherit!important;
+  text-transform:none!important;letter-spacing:0!important}
+.cx-cm{color:var(--chalk3)!important;font-style:italic!important;
+  font-family:'JetBrains Mono',monospace!important;
+  font-size:inherit!important;font-weight:inherit!important;
+  text-transform:none!important;letter-spacing:0!important}
 
 /* STACK */
 .sg{display:grid;grid-template-columns:repeat(4,1fr);gap:1.1rem}
@@ -449,7 +469,7 @@ footer{border-top:1px solid var(--border);padding:1.75rem 3.5rem;
 
 <!-- ABOUT -->
 <section id="about" class="sec">
-  <div class="sh rv"><span class="sn">01 ·</span><h2 class="st">About</h2><div class="sr"></div></div>
+  <div class="sh rv"><span class="sn">01 ·</span><h2 class="s-title">About</h2><div class="sr"></div></div>
   <div class="ag rv">
     <div class="at">
       <p>I'm a backend engineer and development team lead specializing in
@@ -490,7 +510,7 @@ footer{border-top:1px solid var(--border);padding:1.75rem 3.5rem;
 
 <!-- PROJECTS -->
 <section id="projects" class="sec seca">
-  <div class="sh rv"><span class="sn">02 ·</span><h2 class="st">Projects</h2><div class="sr"></div></div>
+  <div class="sh rv"><span class="sn">02 ·</span><h2 class="s-title">Projects</h2><div class="sr"></div></div>
   <div class="pg">
     <a href="https://mapas.procalculo.com/" target="_blank" rel="noopener" class="pc pcj rv">
       <div class="pi">PRJ-001 · Web Platform</div>
@@ -544,7 +564,7 @@ footer{border-top:1px solid var(--border);padding:1.75rem 3.5rem;
 
 <!-- ARCGIS -->
 <section id="arcgis" class="sec">
-  <div class="sh rv"><span class="sn">03 ·</span><h2 class="st">ArcGIS Enterprise Integration</h2><div class="sr"></div></div>
+  <div class="sh rv"><span class="sn">03 ·</span><h2 class="s-title">ArcGIS Enterprise Integration</h2><div class="sr"></div></div>
   <div class="aot rv">
     <div class="aob">
       <p>My backend systems treat <strong>ArcGIS Enterprise</strong> as an active geospatial engine —
@@ -596,21 +616,21 @@ footer{border-top:1px solid var(--border);padding:1.75rem 3.5rem;
       eliminating manual ArcGIS Manager steps from CI/CD pipelines.</p>
       <div class="cb">
         <div class="cbr"><span class="cbl">python</span>arcgis SDK · portal auth</div>
-        <pre><code><span class="cm"># Connect to ArcGIS Enterprise portal</span>
-<span class="kw">from</span> arcgis.gis <span class="kw">import</span> GIS
+        <pre><code><span class="cx-cm"># Connect to ArcGIS Enterprise portal</span>
+<span class="cx-kw">from</span> arcgis.gis <span class="cx-kw">import</span> GIS
 
 gis = GIS(
-    url=<span class="st">"https://arcgis.myorg.co/portal"</span>,
+    url=<span class="cx-st">"https://arcgis.myorg.co/portal"</span>,
     username=settings.ARCGIS_USER,
     password=settings.ARCGIS_PASS,
-    verify_cert=<span class="vl">True</span>
+    verify_cert=<span class="cx-vl">True</span>
 )
-<span class="cm"># Search and access a published feature service</span>
+<span class="cx-cm"># Search and access a published feature service</span>
 item = gis.content.search(
-    <span class="st">"title:deforestation_2024 AND type:Feature Service"</span>,
-    max_items=<span class="vl">1</span>
-)[<span class="vl">0</span>]
-flayer = item.layers[<span class="vl">0</span>]  <span class="cm"># FeatureLayer</span></code></pre>
+    <span class="cx-st">"title:deforestation_2024 AND type:Feature Service"</span>,
+    max_items=<span class="cx-vl">1</span>
+)[<span class="cx-vl">0</span>]
+flayer = item.layers[<span class="cx-vl">0</span>]  <span class="cx-cm"># FeatureLayer</span></code></pre>
       </div>
     </div>
 
@@ -623,14 +643,14 @@ flayer = item.layers[<span class="vl">0</span>]  <span class="cm"># FeatureLayer
       <strong>Rasterio</strong>, FastAPI, and custom packages.</p>
       <div class="cb">
         <div class="cbr"><span class="cbl">bash</span>conda · arcgis server env registration</div>
-        <pre><code><span class="cm"># Clone default env, install geospatial deps</span>
+        <pre><code><span class="cx-cm"># Clone default env, install geospatial deps</span>
 conda create --name geoenv --clone arcgispro-py3
 conda activate geoenv
 
 pip install rasterio gdal shapely geopandas
 pip install arcgis==2.3.0 pydantic fastapi celery
 
-<span class="cm"># Register env with ArcGIS Server (Windows Server)</span>
+<span class="cx-cm"># Register env with ArcGIS Server (Windows Server)</span>
 cd C:\ArcGIS\Server\tools\PythonEnvManagement
 python RegisterPythonEnv.py \
   --env C:\conda\envs\geoenv \
@@ -649,21 +669,21 @@ python RegisterPythonEnv.py \
       on all deployments.</p>
       <div class="cb">
         <div class="cbr"><span class="cbl">python</span>register S3 cloud data store via SDK</div>
-        <pre><code><span class="kw">from</span> arcgis.gis <span class="kw">import</span> GIS
+        <pre><code><span class="cx-kw">from</span> arcgis.gis <span class="cx-kw">import</span> GIS
 
-gis = GIS(<span class="st">"https://portal.myorg.co"</span>, <span class="st">"admin"</span>, pwd)
+gis = GIS(<span class="cx-st">"https://portal.myorg.co"</span>, <span class="cx-st">"admin"</span>, pwd)
 
-<span class="cm"># Register S3 bucket as cloud data store</span>
+<span class="cx-cm"># Register S3 bucket as cloud data store</span>
 ds_config = {
-    <span class="st">"type"</span>: <span class="st">"cloudStore"</span>,
-    <span class="st">"info"</span>: {
-        <span class="st">"objectStore"</span>: <span class="st">"s3://procalculo-imagery"</span>,
-        <span class="st">"provider"</span>: <span class="st">"amazon"</span>,
-        <span class="st">"region"</span>: <span class="st">"us-east-1"</span>,
-        <span class="st">"credentialType"</span>: <span class="st">"IAMRole"</span>
+    <span class="cx-st">"type"</span>: <span class="cx-st">"cloudStore"</span>,
+    <span class="cx-st">"info"</span>: {
+        <span class="cx-st">"objectStore"</span>: <span class="cx-st">"s3://procalculo-imagery"</span>,
+        <span class="cx-st">"provider"</span>: <span class="cx-st">"amazon"</span>,
+        <span class="cx-st">"region"</span>: <span class="cx-st">"us-east-1"</span>,
+        <span class="cx-st">"credentialType"</span>: <span class="cx-st">"IAMRole"</span>
     }
 }
-gis.datastores.add(ds_config, name=<span class="st">"S3ImageryStore"</span>)</code></pre>
+gis.datastores.add(ds_config, name=<span class="cx-st">"S3ImageryStore"</span>)</code></pre>
       </div>
     </div>
 
@@ -676,26 +696,26 @@ gis.datastores.add(ds_config, name=<span class="st">"S3ImageryStore"</span>)</co
       refresh during long batch operations.</p>
       <div class="cb">
         <div class="cbr"><span class="cbl">python</span>applyEdits · REST endpoint · batch push</div>
-        <pre><code><span class="kw">import</span> requests, json
+        <pre><code><span class="cx-kw">import</span> requests, json
 
 token = requests.post(
-    <span class="st">"https://arcgis.myorg.co/portal/sharing/rest/generateToken"</span>,
-    data={<span class="st">"username"</span>: user, <span class="st">"password"</span>: pwd,
-          <span class="st">"client"</span>: <span class="st">"referer"</span>, <span class="st">"f"</span>: <span class="st">"json"</span>}
-).json()[<span class="st">"token"</span>]
+    <span class="cx-st">"https://arcgis.myorg.co/portal/sharing/rest/generateToken"</span>,
+    data={<span class="cx-st">"username"</span>: user, <span class="cx-st">"password"</span>: pwd,
+          <span class="cx-st">"client"</span>: <span class="cx-st">"referer"</span>, <span class="cx-st">"f"</span>: <span class="cx-st">"json"</span>}
+).json()[<span class="cx-st">"token"</span>]
 
 result = requests.post(
-    <span class="st">"https://arcgis.myorg.co/server/rest/services/"</span>
-    <span class="st">"ABACO/FeatureServer/0/applyEdits"</span>,
+    <span class="cx-st">"https://arcgis.myorg.co/server/rest/services/"</span>
+    <span class="cx-st">"ABACO/FeatureServer/0/applyEdits"</span>,
     data={
-        <span class="st">"adds"</span>: json.dumps([{
-            <span class="st">"geometry"</span>: {<span class="st">"rings"</span>: rings,
-                           <span class="st">"spatialReference"</span>: {<span class="st">"wkid"</span>: <span class="vl">4326</span>}},
-            <span class="st">"attributes"</span>: {<span class="st">"area_ha"</span>: area,
-                            <span class="st">"confidence"</span>: score,
-                            <span class="st">"source"</span>: <span class="st">"ABACO-v3"</span>}
+        <span class="cx-st">"adds"</span>: json.dumps([{
+            <span class="cx-st">"geometry"</span>: {<span class="cx-st">"rings"</span>: rings,
+                           <span class="cx-st">"spatialReference"</span>: {<span class="cx-st">"wkid"</span>: <span class="cx-vl">4326</span>}},
+            <span class="cx-st">"attributes"</span>: {<span class="cx-st">"area_ha"</span>: area,
+                            <span class="cx-st">"confidence"</span>: score,
+                            <span class="cx-st">"source"</span>: <span class="cx-st">"ABACO-v3"</span>}
         }]),
-        <span class="st">"token"</span>: token, <span class="st">"f"</span>: <span class="st">"json"</span>
+        <span class="cx-st">"token"</span>: token, <span class="cx-st">"f"</span>: <span class="cx-st">"json"</span>
     }
 ).json()</code></pre>
       </div>
@@ -710,22 +730,22 @@ result = requests.post(
       Django management commands and Celery tasks for scheduled sync pipelines.</p>
       <div class="cb">
         <div class="cbr"><span class="cbl">python</span>arcgis SDK · FeatureLayer · SeDF · publish</div>
-        <pre><code><span class="kw">from</span> arcgis.gis <span class="kw">import</span> GIS
-<span class="kw">from</span> arcgis.features <span class="kw">import</span> FeatureLayer
-<span class="kw">from</span> arcgis.geometry <span class="kw">import</span> filters
+        <pre><code><span class="cx-kw">from</span> arcgis.gis <span class="cx-kw">import</span> GIS
+<span class="cx-kw">from</span> arcgis.features <span class="cx-kw">import</span> FeatureLayer
+<span class="cx-kw">from</span> arcgis.geometry <span class="cx-kw">import</span> filters
 
-gis = GIS(<span class="st">"https://portal.myorg.co"</span>, token=token)
-layer = FeatureLayer(<span class="st">"https://...server/rest/.../0"</span>, gis=gis)
+gis = GIS(<span class="cx-st">"https://portal.myorg.co"</span>, token=token)
+layer = FeatureLayer(<span class="cx-st">"https://...server/rest/.../0"</span>, gis=gis)
 
 sdf = layer.query(
-    where=<span class="st">"area_ha > 10 AND confidence >= 0.85"</span>,
+    where=<span class="cx-st">"area_ha > 10 AND confidence >= 0.85"</span>,
     geometry_filter=filters.intersects(aoi_geom),
-    return_geometry=<span class="vl">True</span>, as_df=<span class="vl">True</span>
+    return_geometry=<span class="cx-vl">True</span>, as_df=<span class="cx-vl">True</span>
 )
 result_sdf = run_analysis_pipeline(sdf)
 result_sdf.spatial.to_featurelayer(
-    title=<span class="st">"ABACO_Results_2024"</span>,
-    gis=gis, folder=<span class="st">"analysis_outputs"</span>
+    title=<span class="cx-st">"ABACO_Results_2024"</span>,
+    gis=gis, folder=<span class="cx-st">"analysis_outputs"</span>
 )</code></pre>
       </div>
     </div>
@@ -739,25 +759,25 @@ result_sdf.spatial.to_featurelayer(
       GP REST calls with async job polling.</p>
       <div class="cb">
         <div class="cbr"><span class="cbl">python</span>arcpy · NDVI change detection · RasterToPolygon</div>
-        <pre><code><span class="kw">import</span> arcpy
+        <pre><code><span class="cx-kw">import</span> arcpy
 
-arcpy.env.workspace = <span class="st">r"\\datastore\imagery\abaco"</span>
-arcpy.env.overwriteOutput = <span class="vl">True</span>
-before = arcpy.Raster(<span class="st">"sentinel_2023_q1.tif"</span>)
-after  = arcpy.Raster(<span class="st">"sentinel_2024_q1.tif"</span>)
+arcpy.env.workspace = <span class="cx-st">r"\\datastore\imagery\abaco"</span>
+arcpy.env.overwriteOutput = <span class="cx-vl">True</span>
+before = arcpy.Raster(<span class="cx-st">"sentinel_2023_q1.tif"</span>)
+after  = arcpy.Raster(<span class="cx-st">"sentinel_2024_q1.tif"</span>)
 
-<span class="cm"># NDVI = (NIR - RED) / (NIR + RED)</span>
-ndvi_b = (before.getBand(<span class="vl">4</span>) - before.getBand(<span class="vl">3</span>)) / \
-         (before.getBand(<span class="vl">4</span>) + before.getBand(<span class="vl">3</span>))
-ndvi_a = (after.getBand(<span class="vl">4</span>) - after.getBand(<span class="vl">3</span>)) / \
-         (after.getBand(<span class="vl">4</span>) + after.getBand(<span class="vl">3</span>))
+<span class="cx-cm"># NDVI = (NIR - RED) / (NIR + RED)</span>
+ndvi_b = (before.getBand(<span class="cx-vl">4</span>) - before.getBand(<span class="cx-vl">3</span>)) / \
+         (before.getBand(<span class="cx-vl">4</span>) + before.getBand(<span class="cx-vl">3</span>))
+ndvi_a = (after.getBand(<span class="cx-vl">4</span>) - after.getBand(<span class="cx-vl">3</span>)) / \
+         (after.getBand(<span class="cx-vl">4</span>) + after.getBand(<span class="cx-vl">3</span>))
 delta = ndvi_a - ndvi_b
 
-loss = arcpy.sa.Con(delta &lt; <span class="vl">-0.15</span>, <span class="vl">1</span>)
+loss = arcpy.sa.Con(delta &lt; <span class="cx-vl">-0.15</span>, <span class="cx-vl">1</span>)
 arcpy.conversion.RasterToPolygon(
-    loss, <span class="st">"deforestation_output.shp"</span>, simplify=<span class="vl">True</span>
+    loss, <span class="cx-st">"deforestation_output.shp"</span>, simplify=<span class="cx-vl">True</span>
 )
-arcpy.AddMessage(<span class="st">"Change detection complete"</span>)</code></pre>
+arcpy.AddMessage(<span class="cx-st">"Change detection complete"</span>)</code></pre>
       </div>
     </div>
 
@@ -768,7 +788,7 @@ arcpy.AddMessage(<span class="st">"Change detection complete"</span>)</code></pr
 
 <!-- STACK -->
 <section id="stack" class="sec seca">
-  <div class="sh rv"><span class="sn">04 ·</span><h2 class="st">Tech Stack</h2><div class="sr"></div></div>
+  <div class="sh rv"><span class="sn">04 ·</span><h2 class="s-title">Tech Stack</h2><div class="sr"></div></div>
   <div class="sg rv">
     <div class="sgc">
       <div class="sgh">Python Backend</div>
@@ -813,7 +833,7 @@ arcpy.AddMessage(<span class="st">"Change detection complete"</span>)</code></pr
 <section id="contact">
   <div class="ci rv">
     <div class="sh" style="justify-content:center">
-      <span class="sn">05 ·</span><h2 class="st">Get in Touch</h2>
+      <span class="sn">05 ·</span><h2 class="s-title">Get in Touch</h2>
     </div>
     <p>Building something that needs spatial intelligence, satellite imagery integration,
     or ArcGIS Enterprise backend expertise? I'm open to collaborations,
