@@ -3,275 +3,364 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Joan Sebastián — GIS Backend Engineer</title>
+<title>Joan Sebastián Díaz Gómez · Senior Geospatial Software Engineer</title>
+<meta name="description" content="Senior Geospatial Software Engineer and Tech Lead (Python + TypeScript) in Bogotá, Colombia, open to remote roles. Production satellite imagery and deforestation monitoring systems on PostGIS and AWS."/>
+<meta name="author" content="Joan Sebastián Díaz Gómez"/>
+<meta name="theme-color" content="#07080a"/>
+<link rel="canonical" href="https://posmodernismosig.github.io/cv/"/>
+<link rel="icon" href="favicon.svg" type="image/svg+xml"/>
+
+<!-- Open Graph -->
+<meta property="og:type" content="profile"/>
+<meta property="og:url" content="https://posmodernismosig.github.io/cv/"/>
+<meta property="og:title" content="Joan Sebastián Díaz Gómez · Senior Geospatial Software Engineer"/>
+<meta property="og:description" content="Full-stack (Python + TypeScript) Tech Lead building geospatial and satellite imagery systems in production. Open to remote roles."/>
+<meta property="og:image" content="https://posmodernismosig.github.io/cv/og-image.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:alt" content="Joan Sebastián Díaz Gómez, Senior Geospatial Software Engineer, on a dark map grid of Colombia"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="profile:first_name" content="Joan Sebastián"/>
+<meta property="profile:last_name" content="Díaz Gómez"/>
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Joan Sebastián Díaz Gómez · Senior Geospatial Software Engineer"/>
+<meta name="twitter:description" content="Full-stack (Python + TypeScript) Tech Lead building geospatial and satellite imagery systems in production. Open to remote roles."/>
+<meta name="twitter:image" content="https://posmodernismosig.github.io/cv/og-image.png"/>
+<meta name="twitter:image:alt" content="Joan Sebastián Díaz Gómez, Senior Geospatial Software Engineer, on a dark map grid of Colombia"/>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Joan Sebastián Díaz Gómez",
+  "jobTitle": "Senior Geospatial Software Engineer",
+  "url": "https://posmodernismosig.github.io/cv/",
+  "address": {"@type": "PostalAddress", "addressLocality": "Bogotá", "addressCountry": "CO"},
+  "worksFor": {"@type": "Organization", "name": "Procalculo"},
+  "sameAs": ["https://github.com/posmodernismoSIG/", "https://www.linkedin.com/in/sebastiandiazg/"],
+  "knowsAbout": ["Geospatial software engineering", "PostGIS", "Satellite imagery", "Python", "TypeScript", "AWS"]
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;1,9..144,300&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+<!-- Fonts load without blocking first paint; system fallbacks render until they arrive -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fraunces:wght@300;700&family=JetBrains+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'"/>
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fraunces:wght@300;700&family=JetBrains+Mono:wght@400;500&display=swap"/></noscript>
+<script>document.documentElement.classList.add('js')</script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
 :root{
   --ink:#07080a;--ink2:#0e1215;--ink3:#161d22;
-  --glass:rgba(7,8,10,.84);
+  --glass:rgba(7,8,10,.86);
   --jade:#06d6a0;--jade2:rgba(6,214,160,.12);--jade3:rgba(6,214,160,.06);
   --ice:#4cc9f0;--ice2:rgba(76,201,240,.1);
   --amber:#f4a261;--rose:#ef476f;
-  --chalk:#f0ede6;--chalk2:#b8c5cc;--chalk3:#4a5c65;
-  --border:rgba(240,237,230,.08);--border2:rgba(6,214,160,.2);
+  --chalk:#f0ede6;--chalk2:#b8c5cc;
+  /* secondary text: 5:1+ contrast on every background used */
+  --chalk3:#8193a0;
+  /* decorative only (dot grid), never for text */
+  --chalk4:#4a5c65;
+  --border:rgba(240,237,230,.1);--border2:rgba(6,214,160,.25);
   --H:'Bebas Neue',sans-serif;
-  --B:'Fraunces',serif;
-  --M:'JetBrains Mono',monospace;
+  --B:'Fraunces',Georgia,serif;
+  --M:'JetBrains Mono',ui-monospace,Menlo,Consolas,monospace;
 }
 body{background:var(--ink);color:var(--chalk2);font-family:var(--M);overflow-x:hidden;cursor:crosshair}
+a,button,summary{cursor:pointer}
+a{color:var(--jade)}
+:focus-visible{outline:2px solid var(--ice);outline-offset:3px}
 /* dot grid */
 body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
-  background-image:radial-gradient(circle,var(--chalk3) 1px,transparent 1px);
+  background-image:radial-gradient(circle,var(--chalk4) 1px,transparent 1px);
   background-size:32px 32px;opacity:.18}
 /* vignette */
 body::after{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
   background:radial-gradient(ellipse 80% 80% at 50% 50%,transparent 40%,rgba(7,8,10,.7) 100%)}
-nav,section,footer,#geo{position:relative;z-index:2}
+header,main,footer{position:relative;z-index:2}
 #geo{position:fixed;inset:0;z-index:0;pointer-events:none}
 #geo svg{width:100%;height:100%}
+@media(max-width:880px){#geo{opacity:.45}}
+
+.skip{position:absolute;left:1rem;top:-3rem;z-index:200;background:var(--jade);color:var(--ink);
+  font-size:.75rem;padding:.6rem 1rem;text-decoration:none}
+.skip:focus{top:1rem}
 
 /* NAV */
-nav{position:fixed;inset:0 0 auto;z-index:100;display:flex;align-items:center;
-  justify-content:space-between;padding:0 3.5rem;height:58px;
+.nav{position:fixed;inset:0 0 auto;z-index:100;display:flex;align-items:center;
+  justify-content:space-between;gap:1.5rem;padding:0 3.5rem;height:58px;
   border-bottom:1px solid var(--border);background:var(--glass);backdrop-filter:blur(16px)}
-.nl{font-family:var(--H);font-size:1.1rem;letter-spacing:.1em;color:var(--chalk);
-  display:flex;align-items:center;gap:.5rem}
+.nl{font-family:var(--H);font-size:1.15rem;letter-spacing:.1em;color:var(--chalk);
+  display:flex;align-items:center;gap:.5rem;text-decoration:none;flex-shrink:0}
 .nl span{color:var(--jade);font-size:.9rem}
-.nm{display:flex;gap:2rem;list-style:none}
-.nm a{font-family:var(--M);font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;
-  color:var(--chalk3);text-decoration:none;transition:color .2s}
+.nav nav{min-width:0}
+.nm{display:flex;gap:1.8rem;list-style:none}
+.nm a{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--chalk3);text-decoration:none;transition:color .2s;white-space:nowrap}
 .nm a:hover{color:var(--jade)}
 .nr{display:flex;align-items:center;gap:1.5rem}
-.nc{font-family:var(--M);font-size:.6rem;color:var(--chalk3)}
-.ns{display:flex;align-items:center;gap:.4rem;font-family:var(--M);font-size:.58rem;color:var(--jade)}
-.pulse{width:6px;height:6px;background:var(--jade);border-radius:50%;
+.nc{font-size:.75rem;color:var(--chalk3);font-variant-numeric:tabular-nums}
+.ns{display:flex;align-items:center;gap:.4rem;font-size:.75rem;color:var(--jade);white-space:nowrap}
+.pulse{width:6px;height:6px;background:var(--jade);border-radius:50%;flex-shrink:0;
   box-shadow:0 0 8px var(--jade);animation:pulse 2s ease-in-out infinite}
-@media(max-width:880px){nav{padding:0 1.5rem}.nc{display:none}.nm{gap:1.2rem}}
-@media(max-width:560px){.nm{display:none}}
+@media(max-width:1080px){.nc{display:none}}
+@media(max-width:880px){.nav{padding:0 1.5rem}.nm{gap:1.2rem}}
+@media(max-width:720px){
+  .nav{padding:0 1rem;gap:1rem}.nr{display:none}
+  .nm{overflow-x:auto;scrollbar-width:none;min-width:0;gap:1rem;padding:.4rem 0}
+  .nm::-webkit-scrollbar{display:none}
+  .nm a{font-size:.75rem;letter-spacing:.1em}
+}
 
 /* HERO */
-#hero{min-height:100vh;display:grid;grid-template-columns:1fr 420px;
-  align-items:center;padding:80px 3.5rem 3.5rem;gap:3rem}
-.he{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--M);font-size:.6rem;
-  letter-spacing:.22em;text-transform:uppercase;color:var(--jade);
+#hero{min-height:calc(100svh - 7rem);display:grid;grid-template-columns:1fr 400px;
+  align-items:center;padding:104px 3.5rem 3rem;gap:3rem}
+.he{display:inline-flex;align-items:center;gap:.6rem;font-size:.75rem;
+  letter-spacing:.2em;text-transform:uppercase;color:var(--jade);
   border:1px solid var(--border2);background:var(--jade3);
-  padding:.3rem .8rem;margin-bottom:1.8rem;animation:up .7s ease both}
-.hn{font-family:var(--H);font-size:clamp(4rem,8vw,7.5rem);line-height:.9;letter-spacing:.04em;
-  color:var(--chalk);margin-bottom:.6rem;animation:up .7s .08s ease both}
+  padding:.35rem .85rem;margin-bottom:1.6rem;animation:up .7s ease both}
+.hn{font-family:var(--H);font-weight:400;font-size:clamp(3rem,7.4vw,6.6rem);line-height:.92;letter-spacing:.04em;
+  color:var(--chalk);margin-bottom:1rem;animation:up .7s .08s ease both}
 .hn em{color:var(--jade);font-style:normal}
-.hs{font-family:var(--M);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;
-  color:var(--ice);margin-bottom:1.8rem;animation:up .7s .16s ease both}
-.hb{font-family:var(--B);font-size:1rem;line-height:1.8;color:var(--chalk2);
-  max-width:540px;margin-bottom:2.2rem;animation:up .7s .24s ease both}
-.hb strong{color:var(--jade);font-weight:700}
+.hs{font-size:.8rem;line-height:1.7;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--ice);margin-bottom:.6rem;animation:up .7s .16s ease both}
+.hloc{font-size:.75rem;color:var(--chalk3);letter-spacing:.06em;margin-bottom:1.6rem;animation:up .7s .2s ease both}
+.hb{font-family:var(--B);font-weight:300;font-size:1.05rem;line-height:1.8;color:var(--chalk2);
+  max-width:560px;margin-bottom:2.2rem;animation:up .7s .24s ease both}
+.hb strong{color:var(--chalk);font-weight:700}
 .hc{display:flex;gap:.9rem;flex-wrap:wrap;animation:up .7s .32s ease both}
-.ht{animation:up .7s .42s ease both}
-@media(max-width:880px){#hero{grid-template-columns:1fr;padding:80px 1.5rem 3rem;gap:2.5rem}}
+.ht{animation:up .7s .42s ease both;min-width:0}
+@media(max-width:980px){#hero{grid-template-columns:1fr;padding:96px 1.5rem 2.5rem;gap:2.5rem;min-height:0}}
+@media(max-width:600px){.ht{display:none}}
+@media(max-width:480px){#hero{padding:88px 1rem 2rem}.hc .btn{flex:1 1 100%;text-align:center}}
 
 /* BUTTONS */
-.btn{font-family:var(--M);font-size:.65rem;letter-spacing:.16em;text-transform:uppercase;
-  text-decoration:none;padding:.75rem 1.6rem;display:inline-block;cursor:pointer;
-  transition:all .22s;position:relative;overflow:hidden}
+.btn{font-family:var(--M);font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;
+  text-decoration:none;padding:.8rem 1.5rem;display:inline-block;
+  transition:background .22s,color .22s,border-color .22s}
 .btn-s{background:var(--jade);color:var(--ink);border:1px solid var(--jade)}
 .btn-s:hover{background:transparent;color:var(--jade)}
-.btn-o{background:transparent;color:var(--chalk2);border:1px solid var(--border)}
+.btn-o{background:transparent;color:var(--chalk);border:1px solid rgba(240,237,230,.25)}
 .btn-o:hover{border-color:var(--jade);color:var(--jade)}
 
 /* TERMINAL */
-.term{background:rgba(14,18,21,.9);border:1px solid var(--border);
-  backdrop-filter:blur(8px);overflow:hidden}
+.term{background:rgba(14,18,21,.92);border:1px solid var(--border);backdrop-filter:blur(8px)}
 .tbar{display:flex;align-items:center;gap:.4rem;padding:.55rem .9rem;
-  background:rgba(22,29,34,.9);border-bottom:1px solid var(--border)}
+  background:rgba(22,29,34,.92);border-bottom:1px solid var(--border)}
 .d{width:10px;height:10px;border-radius:50%}
 .dr{background:#ff5f57}.dy{background:#ffbd2e}.dg{background:#28c840}
-.tf{font-family:var(--M);font-size:.6rem;color:var(--chalk3);margin-left:.3rem}
-.tbody{padding:1.1rem 1.2rem;font-family:var(--M);font-size:.68rem;line-height:1.95}
-.tk{color:var(--ice)}.tv{color:var(--jade)}.ts{color:var(--amber)}
-.tc{color:var(--chalk3)}.tb{color:var(--chalk3)}
+.tf{font-size:.75rem;color:var(--chalk3);margin-left:.3rem}
+.tbody{padding:1.1rem 1.2rem;font-family:var(--M);font-size:.75rem;line-height:1.9;
+  color:var(--chalk3);overflow-x:auto;white-space:pre}
+.tk{color:var(--ice)}.tv{color:var(--jade)}.ts{color:var(--amber)}.tc{color:var(--chalk3)}
 .cur{display:inline-block;width:7px;height:.9em;background:var(--jade);
   vertical-align:text-bottom;animation:blink 1s step-end infinite}
 
-/* SECTIONS */
-.sec{padding:6rem 3.5rem;overflow:hidden}
-.seca{background:linear-gradient(180deg,transparent,var(--ink2) 15%,var(--ink2) 85%,transparent)}
-@media(max-width:880px){.sec{padding:4rem 1.5rem}}
+/* IMPACT STRIP */
+.impact{padding:0 3.5rem 3rem}
+.ig{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);
+  border:1px solid var(--border2);background:var(--glass);backdrop-filter:blur(8px)}
+.ii{padding:1.5rem 1.6rem;border-left:1px solid var(--border)}
+.ii:first-child{border-left:0}
+.iv{display:block;font-family:var(--H);font-size:clamp(2.6rem,4.4vw,3.6rem);line-height:1;
+  letter-spacing:.03em;color:var(--jade)}
+.il{display:block;margin-top:.45rem;font-size:.75rem;line-height:1.5;letter-spacing:.06em;color:var(--chalk2)}
+@media(max-width:880px){.impact{padding:0 1.5rem 2.5rem}
+  .ig{grid-template-columns:1fr 1fr}.ii:nth-child(3){border-left:0}
+  .ii:nth-child(n+3){border-top:1px solid var(--border)}}
+@media(max-width:480px){.impact{padding:0 1rem 2rem}.ii{padding:1.1rem 1rem}}
 
-/* SECTION HEADER */
-.sh{display:flex;align-items:center;gap:1.5rem;margin-bottom:3.5rem}
-.sn{font-family:var(--M);font-size:.58rem;color:var(--jade);letter-spacing:.22em}
-.s-title{font-family:var(--H);font-size:clamp(2.2rem,4vw,3.4rem);
+/* SECTIONS */
+.sec{padding:6rem 3.5rem}
+.seca{background:linear-gradient(180deg,transparent,var(--ink2) 12%,var(--ink2) 88%,transparent)}
+@media(max-width:880px){.sec{padding:4rem 1.5rem}}
+@media(max-width:480px){.sec{padding:3.5rem 1rem}}
+
+.sh{display:flex;align-items:center;gap:1.5rem;margin-bottom:3rem}
+.sn{font-size:.75rem;color:var(--jade);letter-spacing:.2em;flex-shrink:0}
+.s-title{font-family:var(--H);font-weight:400;font-size:clamp(2.2rem,4vw,3.4rem);
   letter-spacing:.06em;color:var(--chalk);line-height:1}
 .sr{flex:1;height:1px;background:var(--border)}
+.lede{font-family:var(--B);font-weight:300;font-size:1rem;line-height:1.8;color:var(--chalk2);
+  max-width:720px;margin:-1.5rem 0 2.5rem}
 
 /* DIVIDER */
-.dv{display:flex;align-items:center;gap:1.2rem;padding:0 3.5rem;opacity:.6}
+.dv{display:flex;align-items:center;gap:1.2rem;padding:0 3.5rem}
 .dl{flex:1;height:1px;background:var(--border)}
-.dt{font-family:var(--M);font-size:.56rem;letter-spacing:.22em;
-  text-transform:uppercase;color:var(--chalk3);white-space:nowrap}
+.dt{font-size:.75rem;letter-spacing:.22em;text-transform:uppercase;color:var(--chalk3);white-space:nowrap}
 @media(max-width:880px){.dv{padding:0 1.5rem}}
 
 /* ABOUT */
-.ag{display:grid;grid-template-columns:1.1fr 1fr;gap:5rem;align-items:start}
-.at p{font-family:var(--B);font-size:.95rem;line-height:1.85;color:var(--chalk2);margin-bottom:1.2rem}
-.at strong{color:var(--jade);font-weight:700}
-.tl{font-family:var(--M);font-size:.58rem;letter-spacing:.22em;
-  text-transform:uppercase;color:var(--jade);margin-bottom:1rem}
-.tg{display:grid;grid-template-columns:1fr 1fr;gap:.45rem}
-.ti{display:flex;align-items:center;gap:.5rem;font-family:var(--M);font-size:.66rem;
-  color:var(--chalk2);padding:.55rem .7rem;background:var(--ink3);
-  border:1px solid var(--border);transition:border-color .2s,color .2s}
-.ti:hover{border-color:var(--border2);color:var(--jade)}
-.td{width:4px;height:4px;background:var(--jade);border-radius:50%;flex-shrink:0}
-@media(max-width:880px){.ag{grid-template-columns:1fr;gap:3rem}}
-@media(max-width:460px){.tg{grid-template-columns:1fr}}
+.ag{display:grid;grid-template-columns:1.2fr 1fr;gap:5rem;align-items:start}
+.at p{font-family:var(--B);font-weight:300;font-size:1rem;line-height:1.85;color:var(--chalk2);margin-bottom:1.2rem}
+.at strong{color:var(--chalk);font-weight:700}
+.tl{font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--jade);margin-bottom:1rem}
+.facts{list-style:none;display:grid;gap:.45rem}
+.facts li{display:grid;grid-template-columns:7.5rem 1fr;gap:.8rem;font-size:.75rem;line-height:1.6;
+  padding:.65rem .8rem;background:var(--ink3);border:1px solid var(--border)}
+.facts b{font-weight:500;color:var(--jade);text-transform:uppercase;letter-spacing:.1em;font-size:.75rem;padding-top:.1rem}
+@media(max-width:880px){.ag{grid-template-columns:1fr;gap:2.5rem}}
+@media(max-width:420px){.facts li{grid-template-columns:1fr;gap:.2rem}}
 
-/* PROJECTS */
-.pg{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
-.pc{background:var(--ink2);border:1px solid var(--border);padding:2rem;
-  display:flex;flex-direction:column;gap:.9rem;position:relative;overflow:hidden;
-  transition:border-color .3s,transform .3s;text-decoration:none}
+/* PROJECTS — case studies */
+.pg{display:flex;flex-direction:column;gap:1.4rem}
+.pc{display:grid;grid-template-columns:280px 1fr;gap:2.5rem;background:var(--ink2);
+  border:1px solid var(--border);padding:2.2rem;position:relative;overflow:hidden;
+  transition:border-color .3s}
 .pc::after{content:'';position:absolute;top:0;left:0;right:0;height:2px;
-  background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .4s}
-.pc:hover{transform:translateY(-5px)}
+  background:var(--accent);transform:scaleX(.18);transform-origin:left;transition:transform .5s}
 .pc:hover::after{transform:scaleX(1)}
-.pcj{color:var(--jade)}.pci{color:var(--ice)}.pca{color:var(--amber)}
-.pcj:hover{border-color:rgba(6,214,160,.3)}
-.pci:hover{border-color:rgba(76,201,240,.3)}
-.pca:hover{border-color:rgba(244,162,97,.3)}
-.pi{font-family:var(--M);font-size:.55rem;letter-spacing:.2em;text-transform:uppercase;color:var(--chalk3)}
-.pn{font-family:var(--H);font-size:1.9rem;letter-spacing:.06em;line-height:1;
-  display:flex;align-items:center;gap:.5rem}
-.arr{font-size:1rem;opacity:.6;transition:transform .2s,opacity .2s}
-.pc:hover .arr{transform:translate(3px,-3px);opacity:1}
-.pd{font-family:var(--B);font-size:.84rem;line-height:1.8;color:var(--chalk2);flex:1}
-.ptags{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:auto}
-.tag{font-family:var(--M);font-size:.55rem;letter-spacing:.1em;text-transform:uppercase;
-  padding:.2rem .5rem;border:1px solid var(--border);color:var(--chalk3);background:var(--ink3)}
-@media(max-width:880px){.pg{grid-template-columns:1fr}}
+.pcj{--accent:var(--jade)}.pci{--accent:var(--ice)}.pca{--accent:var(--amber)}
+.pc:hover{border-color:color-mix(in srgb,var(--accent) 35%,transparent)}
+.ph{display:flex;flex-direction:column;gap:.6rem;align-items:flex-start}
+.pi{font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;color:var(--chalk3)}
+.pm{display:flex;flex-direction:column;gap:.35rem;margin:.3rem 0 .4rem}
+.pmv{font-family:var(--H);font-size:clamp(3rem,5vw,4.2rem);line-height:.9;letter-spacing:.03em;color:var(--accent)}
+.pml{font-size:.75rem;line-height:1.5;letter-spacing:.08em;text-transform:uppercase;color:var(--chalk)}
+.pn{font-family:var(--H);font-weight:400;font-size:1.9rem;letter-spacing:.06em;line-height:1;color:var(--chalk)}
+.plink{font-size:.75rem;color:var(--accent);text-decoration:none;border-bottom:1px solid transparent;transition:border-color .2s}
+.plink:hover{border-bottom-color:currentColor}
+.cs{display:grid;gap:1.1rem}
+.cs>div{display:grid;grid-template-columns:7.5rem 1fr;gap:1rem}
+.cs dt{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);padding-top:.3rem}
+.cs dd{font-family:var(--B);font-weight:300;font-size:.95rem;line-height:1.7;color:var(--chalk2)}
+.cs dd strong{color:var(--chalk);font-weight:700}
+.cs ul{list-style:none;display:grid;gap:.3rem}
+.cs li{padding-left:1rem;position:relative}
+.cs li::before{content:'›';position:absolute;left:0;color:var(--accent)}
+.ptags{list-style:none;display:flex;flex-wrap:wrap;gap:.35rem}
+.cs .ptags{display:flex;gap:.35rem}
+.cs .ptags li{padding:0}.cs .ptags li::before{content:none}
+.tag{font-family:var(--M);font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;
+  padding:.25rem .55rem;border:1px solid var(--border);color:var(--chalk2);background:var(--ink3)}
+@media(max-width:980px){.pc{grid-template-columns:1fr;gap:1.6rem}}
+@media(max-width:600px){.pc{padding:1.5rem 1.2rem}.cs>div{grid-template-columns:1fr;gap:.3rem}.cs dt{padding-top:0}}
 
-/* ARCGIS OVERVIEW */
-.aot{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;margin-bottom:4rem}
-.aob p{font-family:var(--B);font-size:.94rem;line-height:1.85;color:var(--chalk2);margin-bottom:1.1rem}
-.aob strong{color:var(--jade);font-weight:700}
-@media(max-width:880px){.aot{grid-template-columns:1fr;gap:2.5rem}}
+/* GEOSPATIAL */
+.aot{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;margin-bottom:3.5rem}
+.aob p{font-family:var(--B);font-weight:300;font-size:1rem;line-height:1.85;color:var(--chalk2);margin-bottom:1.1rem}
+.aob strong{color:var(--chalk);font-weight:700}
+.aob .note{font-family:var(--M);font-size:.75rem;line-height:1.7;color:var(--chalk3)}
+@media(max-width:980px){.aot{grid-template-columns:1fr;gap:2.5rem}}
 
 /* ARCH DIAGRAM */
 .arch{display:flex;flex-direction:column;gap:.5rem}
-.al{font-family:var(--M);font-size:.55rem;letter-spacing:.2em;text-transform:uppercase;
+.arch figcaption{font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--jade);
+  text-align:center;margin-bottom:.6rem}
+.al{font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;
   color:var(--chalk3);text-align:center;margin-bottom:.15rem}
 .ar{display:grid;gap:.45rem}
 .ar.c2{grid-template-columns:1fr 1fr}
-.ar.c3{grid-template-columns:1fr 1fr 1fr}
 .an{background:var(--ink3);border:1px solid var(--border);
-  padding:.6rem .85rem;font-family:var(--M);font-size:.63rem;
-  color:var(--chalk2);text-align:center;line-height:1.45;transition:all .2s}
+  padding:.65rem .85rem;font-size:.8rem;
+  color:var(--chalk2);text-align:center;line-height:1.45;transition:border-color .2s,color .2s}
 .an:hover{border-color:var(--jade);color:var(--jade)}
 .an.core{border-color:var(--jade);color:var(--jade);background:var(--jade3)}
 .an.top{border-color:var(--ice);color:var(--ice);background:var(--ice2)}
-.an small{font-size:.52rem;opacity:.55;display:block;margin-top:.1rem}
-.aa{text-align:center;color:var(--jade);font-size:.72rem;opacity:.45;padding:.05rem 0}
+.an small{font-size:.75rem;color:var(--chalk3);display:block;margin-top:.15rem}
+.aa{text-align:center;color:var(--jade);font-size:.75rem;padding:.05rem 0}
 
-/* ARCGIS CARDS */
-.agg{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;width:100%}
-.agc{background:var(--ink2);border:1px solid var(--border);
-  padding:1.6rem;display:flex;flex-direction:column;gap:.9rem;
-  transition:border-color .3s,transform .3s;
-  min-width:0;overflow:hidden;width:100%}
-.agc:hover{border-color:var(--border2);transform:translateY(-3px)}
-.agh{display:flex;align-items:flex-start;gap:.75rem;flex-wrap:wrap}
-.ago{color:var(--jade);font-size:.9rem;margin-top:.1rem;flex-shrink:0}
-.agt{font-family:var(--H);font-size:1.05rem;letter-spacing:.05em;color:var(--chalk);flex:1}
-.agb{font-family:var(--M);font-size:.52rem;letter-spacing:.12em;text-transform:uppercase;
-  padding:.18rem .5rem;border:1px solid var(--border2);color:var(--jade);
-  align-self:flex-start;white-space:nowrap}
-.agp{font-family:var(--B);font-size:.82rem;line-height:1.8;color:var(--chalk2)}
-.agp strong{color:var(--jade);font-weight:700}
-.agp code{font-family:var(--M);font-size:.7rem;color:var(--ice);background:var(--ice2);padding:.1rem .3rem}
-@media(max-width:880px){.agg{grid-template-columns:1fr}}
+/* TOOLKIT */
+.kit{display:grid;grid-template-columns:repeat(4,1fr);gap:1.1rem;margin-bottom:3.5rem}
+.kc{background:var(--ink2);border:1px solid var(--border);padding:1.4rem}
+.kc h3{font-weight:500;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--jade);padding-bottom:.6rem;border-bottom:1px solid var(--border);margin-bottom:1rem}
+.kc dl{display:grid;gap:.8rem}
+.kc dt{font-size:.78rem;color:var(--chalk)}
+.kc dd{font-family:var(--B);font-weight:300;font-size:.86rem;line-height:1.55;color:var(--chalk2);margin-top:.1rem}
+@media(max-width:1080px){.kit{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.kit{grid-template-columns:1fr}}
 
-/* CODE BLOCKS */
-.cb{background:#050b0f;border:1px solid var(--border);
-  overflow:hidden;width:100%;max-width:100%}
-.cbr{display:flex;align-items:center;gap:.4rem;padding:.38rem .85rem;
-  background:var(--ink3);border-bottom:1px solid var(--border);
-  font-family:var(--M)!important;font-size:.56rem;color:var(--chalk3);letter-spacing:.1em}
-.cbl{color:var(--jade);text-transform:uppercase}
-.cb pre{padding:.85rem 1rem;overflow-x:auto;margin:0;max-width:100%;
-  word-break:normal;overflow-wrap:normal}
-.cb code{
-  font-family:'JetBrains Mono',monospace!important;
-  font-size:.63rem!important;line-height:1.8!important;
-  color:var(--chalk2)!important;display:block;white-space:pre;
-  letter-spacing:0!important;text-transform:none!important;
-  font-weight:400!important;font-style:normal!important}
-/* Scoped syntax highlight — cx- prefix prevents any global collision */
-.cx-kw{color:var(--ice)!important;
-  font-family:'JetBrains Mono',monospace!important;
-  font-size:inherit!important;font-weight:inherit!important;
-  text-transform:none!important;letter-spacing:0!important}
-.cx-st{color:var(--amber)!important;
-  font-family:'JetBrains Mono',monospace!important;
-  font-size:inherit!important;font-weight:inherit!important;
-  text-transform:none!important;letter-spacing:0!important}
-.cx-vl{color:#c77dff!important;
-  font-family:'JetBrains Mono',monospace!important;
-  font-size:inherit!important;font-weight:inherit!important;
-  text-transform:none!important;letter-spacing:0!important}
-.cx-cm{color:var(--chalk3)!important;font-style:italic!important;
-  font-family:'JetBrains Mono',monospace!important;
-  font-size:inherit!important;font-weight:inherit!important;
-  text-transform:none!important;letter-spacing:0!important}
+/* CODE EXAMPLES */
+.xh{font-family:var(--H);font-weight:400;font-size:1.5rem;letter-spacing:.06em;color:var(--chalk);margin-bottom:1rem}
+.xs{display:grid;grid-template-columns:minmax(0,1fr);gap:.8rem}
+.xs details{background:var(--ink2);border:1px solid var(--border);transition:border-color .2s}
+.xs details[open],.xs details:hover{border-color:var(--border2)}
+.xs summary{list-style:none;display:flex;align-items:center;gap:1rem;padding:1.1rem 1.3rem}
+.xs summary::-webkit-details-marker{display:none}
+.xs summary::before{content:'+';font-size:1rem;color:var(--jade);width:1rem;flex-shrink:0;text-align:center}
+.xs details[open] summary::before{content:'−'}
+.xt{display:flex;flex-direction:column;gap:.25rem;min-width:0}
+.xt b{font-weight:500;font-size:.8rem;color:var(--chalk)}
+.xt span{font-size:.75rem;color:var(--chalk3);line-height:1.5}
+.xl{margin-left:auto;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--jade);
+  border:1px solid var(--border2);padding:.18rem .5rem;white-space:nowrap}
+.xs details>p{font-family:var(--B);font-weight:300;font-size:.92rem;line-height:1.7;
+  color:var(--chalk2);padding:0 1.3rem 1rem 3.3rem}
+.cb{background:#050b0f;border-top:1px solid var(--border)}
+.cb pre{padding:1rem 1.3rem;overflow-x:auto;margin:0}
+.cb code{font-family:var(--M);font-size:.75rem;line-height:1.75;color:var(--chalk2);white-space:pre}
+.cx-kw{color:var(--ice)}.cx-st{color:var(--amber)}.cx-vl{color:#c77dff}.cx-cm{color:var(--chalk3);font-style:italic}
+@media(max-width:600px){.xl{display:none}.xs details>p{padding:0 1.1rem 1rem}.xs summary{padding:1rem 1.1rem}}
 
-/* STACK */
+/* OPEN SOURCE */
+.oss{display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:center;
+  background:var(--ink2);border:1px dashed var(--border2);padding:2.2rem}
+.oss h3{font-family:var(--H);font-weight:400;font-size:2rem;letter-spacing:.06em;color:var(--chalk);margin:.7rem 0 .6rem}
+.oss p{font-family:var(--B);font-weight:300;font-size:.98rem;line-height:1.75;color:var(--chalk2);max-width:640px}
+.soon{display:inline-flex;align-items:center;gap:.5rem;font-size:.75rem;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--amber);border:1px solid rgba(244,162,97,.35);padding:.25rem .6rem}
+.soon::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--amber)}
+.oss .ptags{margin-top:1.1rem}
+@media(max-width:880px){.oss{grid-template-columns:1fr;padding:1.6rem 1.2rem}}
+
+/* SKILLS */
 .sg{display:grid;grid-template-columns:repeat(4,1fr);gap:1.1rem}
 .sgc{background:var(--ink2);border:1px solid var(--border);padding:1.4rem}
-.sgh{font-family:var(--M);font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;
+.sgc h3{font-weight:500;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;
   color:var(--jade);padding-bottom:.6rem;border-bottom:1px solid var(--border);margin-bottom:1.1rem}
-.sgc ul{list-style:none;display:flex;flex-direction:column;gap:.45rem}
-.sgc li{font-family:var(--M);font-size:.72rem;color:var(--chalk2);
-  display:flex;align-items:center;gap:.45rem}
-.sgc li::before{content:'·';color:var(--jade);font-size:.9rem}
-@media(max-width:880px){.sg{grid-template-columns:1fr 1fr}}
-@media(max-width:520px){.sg{grid-template-columns:1fr}}
+.sgc ul{list-style:none;display:flex;flex-direction:column;gap:.5rem}
+.sgc li{font-size:.76rem;line-height:1.55;color:var(--chalk2);display:flex;gap:.5rem}
+.sgc li::before{content:'·';color:var(--jade)}
+@media(max-width:1080px){.sg{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.sg{grid-template-columns:1fr}}
 
 /* CONTACT */
 #contact{padding:6rem 3.5rem;text-align:center}
-.ci{max-width:640px;margin:0 auto}
+.ci{max-width:680px;margin:0 auto}
 .ci .sh{justify-content:center}
-.ci p{font-family:var(--B);font-size:.95rem;line-height:1.85;color:var(--chalk2);margin:1.5rem 0 2.5rem}
+.ci p{font-family:var(--B);font-weight:300;font-size:1rem;line-height:1.85;color:var(--chalk2);margin:0 0 1.2rem}
+.cmail{display:inline-block;font-size:.9rem;color:var(--jade);margin-bottom:2.2rem;word-break:break-all}
 .clinks{display:flex;justify-content:center;gap:.9rem;flex-wrap:wrap}
 @media(max-width:880px){#contact{padding:4rem 1.5rem}}
+@media(max-width:480px){#contact{padding:3.5rem 1rem}.clinks .btn{flex:1 1 100%;text-align:center}}
 
 /* FOOTER */
 footer{border-top:1px solid var(--border);padding:1.75rem 3.5rem;
-  display:flex;justify-content:space-between;align-items:center}
-.ft{font-family:var(--M);font-size:.6rem;color:var(--chalk3);letter-spacing:.08em}
+  display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.ft{font-size:.75rem;color:var(--chalk3);letter-spacing:.06em}
 .ftr{display:flex;align-items:center;gap:1.5rem}
-.ftc{font-family:var(--M);font-size:.6rem;color:var(--chalk3)}
+.ftc{font-size:.75rem;color:var(--chalk3)}
 .ftc span{color:var(--jade)}
-@media(max-width:880px){footer{flex-direction:column;gap:.6rem;text-align:center;padding:1.5rem}
+@media(max-width:880px){footer{flex-direction:column;gap:.6rem;text-align:center;padding:1.5rem 1rem}
   .ftr{flex-direction:column;gap:.4rem}}
 
-/* REVEAL */
-.rv{opacity:0;transform:translateY(24px);transition:opacity .65s ease,transform .65s ease}
-.rv.on{opacity:1;transform:none}
+/* REVEAL (only when JS runs, so content is never hidden without it) */
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity .65s ease,transform .65s ease}
+.js .rv.on{opacity:1;transform:none}
 
-/* KEYFRAMES */
 @keyframes up{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
 @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.75)}}
 @keyframes orbit{from{stroke-dashoffset:0}to{stroke-dashoffset:-1200}}
 @keyframes topo{from{stroke-dashoffset:0}to{stroke-dashoffset:-600}}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .rv{opacity:1;transform:none}
+}
 </style>
 </head>
 <body>
 
-<!-- GEO BACKGROUND -->
-<div id="geo">
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- GEO BACKGROUND (decorative) -->
+<div id="geo" aria-hidden="true">
 <svg viewBox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
 <defs>
   <radialGradient id="gA" cx="55%" cy="45%" r="45%">
@@ -404,451 +493,571 @@ footer{border-top:1px solid var(--border);padding:1.75rem 3.5rem;
   <text x="1268" y="858" font-family="'JetBrains Mono'" font-size="6" fill="#06d6a0">DATUM: GRS 1980</text>
   <text x="1268" y="870" font-family="'JetBrains Mono'" font-size="6" fill="#4cc9f0">PROJECTION: Geographic</text>
 </g>
-<text x="28" y="880" font-family="'JetBrains Mono'" font-size="7" fill="#06d6a0" opacity=".28">v2025.1 · PROCALCULO · COLOMBIA SA</text>
+<text x="28" y="880" font-family="'JetBrains Mono'" font-size="7" fill="#06d6a0" opacity=".28">v2026.1 · BOGOTÁ · COLOMBIA</text>
 </svg>
 </div>
 
-<!-- NAV -->
-<nav>
-  <div class="nl">JS<span>·</span>DEV</div>
-  <ul class="nm">
-    <li><a href="#about">About</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#arcgis">ArcGIS</a></li>
-    <li><a href="#stack">Stack</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
+<header class="nav">
+  <a class="nl" href="#hero" aria-label="Joan Sebastián Díaz Gómez, back to top">JS<span aria-hidden="true">·</span>DEV</a>
+  <nav aria-label="Primary">
+    <ul class="nm">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#geospatial">Geospatial</a></li>
+      <li><a href="#open-source">Open source</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
   <div class="nr">
-    <div class="ns"><span class="pulse"></span>Available</div>
-    <div class="nc" id="coord">4.7110°N · 74.0721°W</div>
+    <div class="ns"><span class="pulse" aria-hidden="true"></span>Open to remote</div>
+    <div class="nc" id="coord" aria-hidden="true">4.7110°N · 74.0721°W</div>
   </div>
-</nav>
+</header>
+
+<main id="main">
 
 <!-- HERO -->
-<section id="hero">
+<section id="hero" aria-labelledby="hero-name">
   <div>
-    <div class="he"><span class="pulse"></span>GIS Backend Engineer · Bogotá, Colombia</div>
-    <h1 class="hn">JOAN<br/><em>SEBASTIÁN</em></h1>
-    <p class="hs">Backend Developer · GIS &amp; Remote Sensing Systems</p>
-    <p class="hb">I build production-grade geospatial platforms where <strong>satellite imagery</strong>,
-    <strong>ArcGIS Enterprise</strong>, and modern Python backends converge.
-    From deforestation detection to satellite image search APIs —
-    turning raw geodata into decision-ready intelligence for government and military clients.</p>
+    <p class="he"><span class="pulse" aria-hidden="true"></span>Open to remote roles</p>
+    <h1 class="hn" id="hero-name">Joan Sebastián<br/><em>Díaz Gómez</em></h1>
+    <p class="hs">Senior Geospatial Software Engineer · Full-Stack (Python + TypeScript) · Tech Lead</p>
+    <p class="hloc">Bogotá, Colombia (UTC−5) · Remote for teams in the US, Canada &amp; Australia</p>
+    <p class="hb">I lead a team of 8 engineers building <strong>geospatial and satellite imagery systems</strong>
+    that run in production: deforestation monitoring across the Colombian Amazon,
+    a multi-provider imagery marketplace, and a unified satellite imagery API.</p>
     <div class="hc">
-      <a href="#projects" class="btn btn-s">View Projects</a>
-      <a href="#contact" class="btn btn-o">Get in touch</a>
+      <a href="#projects" class="btn btn-s">View case studies</a>
+      <a href="/cv/resume.pdf" class="btn btn-o" download>Download resume (PDF)</a>
+      <a href="#contact" class="btn btn-o">Contact</a>
     </div>
   </div>
-  <div class="ht">
+  <div class="ht" aria-hidden="true">
     <div class="term">
       <div class="tbar">
-        <div class="d dr"></div><div class="d dy"></div><div class="d dg"></div>
+        <span class="d dr"></span><span class="d dy"></span><span class="d dg"></span>
         <span class="tf">profile.json</span>
       </div>
-      <div class="tbody">
-        <span class="tb">{</span><br/>
-        &nbsp;&nbsp;<span class="tk">"name"</span>: <span class="ts">"Joan Sebastián"</span>,<br/>
-        &nbsp;&nbsp;<span class="tk">"role"</span>: <span class="ts">"GIS Backend Engineer"</span>,<br/>
-        &nbsp;&nbsp;<span class="tk">"location"</span>: <span class="ts">"Bogotá 🇨🇴"</span>,<br/>
-        &nbsp;&nbsp;<span class="tk">"company"</span>: <span class="ts">"Procalculo · ESRI Partner"</span>,<br/>
-        &nbsp;&nbsp;<span class="tk">"focus"</span>: <span class="tb">[</span><br/>
-        &nbsp;&nbsp;&nbsp;&nbsp;<span class="tv">"ArcGIS Enterprise"</span>,<br/>
-        &nbsp;&nbsp;&nbsp;&nbsp;<span class="tv">"Satellite Imagery"</span>,<br/>
-        &nbsp;&nbsp;&nbsp;&nbsp;<span class="tv">"Django · FastAPI · Flask"</span>,<br/>
-        &nbsp;&nbsp;&nbsp;&nbsp;<span class="tv">"PostGIS · AWS EKS"</span><br/>
-        &nbsp;&nbsp;<span class="tb">]</span>,<br/>
-        &nbsp;&nbsp;<span class="tc">// systems in production</span><br/>
-        &nbsp;&nbsp;<span class="tk">"projects"</span>: <span class="tb">[</span><br/>
-        &nbsp;&nbsp;&nbsp;&nbsp;<span class="tv">"ABACO"</span>, <span class="tv">"Prisma"</span>, <span class="tv">"Mapas.co"</span><br/>
-        &nbsp;&nbsp;<span class="tb">]</span><br/>
-        <span class="tb">}</span><span class="cur"></span>
-      </div>
+<div class="tbody">{
+  <span class="tk">"name"</span>: <span class="ts">"Joan Sebastián Díaz Gómez"</span>,
+  <span class="tk">"role"</span>: <span class="ts">"Senior Geospatial SWE"</span>,
+  <span class="tk">"lead"</span>: <span class="ts">"8 developers @ Procalculo"</span>,
+  <span class="tk">"location"</span>: <span class="ts">"Bogotá, CO · UTC−5"</span>,
+  <span class="tk">"remote"</span>: [<span class="tv">"US"</span>, <span class="tv">"CA"</span>, <span class="tv">"AU"</span>],
+  <span class="tk">"stack"</span>: [
+    <span class="tv">"Python"</span>, <span class="tv">"TypeScript"</span>,
+    <span class="tv">"PostGIS"</span>, <span class="tv">"AWS"</span>
+  ],
+  <span class="tc">// systems in production</span>
+  <span class="tk">"projects"</span>: [
+    <span class="tv">"ABACO"</span>, <span class="tv">"Mapas.co"</span>, <span class="tv">"Prisma API"</span>
+  ]
+}<span class="cur"></span></div>
     </div>
   </div>
+</section>
+
+<!-- IMPACT STRIP -->
+<section class="impact" aria-label="Impact in numbers">
+  <ul class="ig">
+    <li class="ii"><span class="iv">10M+</span><span class="il">hectares monitored</span></li>
+    <li class="ii"><span class="iv">8</span><span class="il">imagery providers integrated</span></li>
+    <li class="ii"><span class="iv">100+</span><span class="il">API requests/day in production</span></li>
+    <li class="ii"><span class="iv">8</span><span class="il">developers on the team I lead</span></li>
+  </ul>
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="sec">
-  <div class="sh rv"><span class="sn">01 ·</span><h2 class="s-title">About</h2><div class="sr"></div></div>
+<section id="about" class="sec" aria-labelledby="about-title">
+  <div class="sh rv"><span class="sn">01 ·</span><h2 class="s-title" id="about-title">About</h2><div class="sr"></div></div>
   <div class="ag rv">
     <div class="at">
-      <p>I'm a backend engineer and development team lead specializing in
-      <strong>geospatial intelligence platforms</strong>. I work at the intersection of satellite imagery,
-      GIS infrastructure, and enterprise Python APIs — building systems that serve government agencies,
-      military forces, and private sector organizations across Colombia.</p>
-      <p>My work centers on <strong>ArcGIS Enterprise</strong> integration: designing Python REST middleware
-      layers that expose geospatial capabilities cleanly while hiding ESRI complexity from client applications.
-      I apply hexagonal architecture and SOLID principles to keep complex GIS logic maintainable
-      and testable at production scale.</p>
-      <p>Beyond the backend, I lead end-to-end delivery — infrastructure on <strong>AWS EKS / Kubernetes</strong>,
-      CI/CD pipelines with security hardening, database design with <strong>PostGIS</strong>,
-      and frontend development with Angular, React, and Next.js. My team builds the tools that let
-      analysts and decision-makers see the Earth clearly.</p>
+      <p>I'm a software engineer and Team Lead at <strong>Procalculo</strong> in Bogotá, where I lead
+      8 frontend, backend, and full-stack developers. We build systems that turn satellite imagery
+      into data people can search, buy, and act on.</p>
+      <p>I own the backend architecture and API design, and I deploy and run our services on
+      <strong>AWS</strong> (EKS, EC2, Lambda, S3, CloudFront). My day-to-day stack is
+      <strong>Python</strong> (Django REST Framework, FastAPI), <strong>TypeScript</strong>
+      (React, Next.js, Angular), and <strong>PostgreSQL/PostGIS</strong>.</p>
+      <p>What sets my work apart is production geospatial experience: raster processing,
+      spatial databases, imagery provider integrations, and maps that stay fast with real data.</p>
     </div>
     <div>
-      <p class="tl">Core Technologies</p>
-      <div class="tg">
-        <div class="ti"><div class="td"></div>Django REST Framework</div>
-        <div class="ti"><div class="td"></div>FastAPI</div>
-        <div class="ti"><div class="td"></div>Flask</div>
-        <div class="ti"><div class="td"></div>ArcGIS Enterprise</div>
-        <div class="ti"><div class="td"></div>PostGIS / PostgreSQL</div>
-        <div class="ti"><div class="td"></div>GDAL / Rasterio</div>
-        <div class="ti"><div class="td"></div>AWS EKS / Kubernetes</div>
-        <div class="ti"><div class="td"></div>Python · ArcPy</div>
-        <div class="ti"><div class="td"></div>Angular</div>
-        <div class="ti"><div class="td"></div>React · Next.js</div>
-        <div class="ti"><div class="td"></div>Docker · GitFlow</div>
-        <div class="ti"><div class="td"></div>SQL Server</div>
-        <div class="ti"><div class="td"></div>ArcGIS Learn / ML</div>
-      </div>
+      <p class="tl">At a glance</p>
+      <ul class="facts">
+        <li><b>Roles</b><span>Senior Geospatial Software Engineer · Senior Full-Stack Engineer · Tech Lead</span></li>
+        <li><b>Leadership</b><span>Team Lead of 8 developers (frontend, backend, full-stack)</span></li>
+        <li><b>Backend</b><span>Python · Django REST Framework · FastAPI · Node.js</span></li>
+        <li><b>Frontend</b><span>TypeScript · React · Next.js · Angular</span></li>
+        <li><b>Data</b><span>PostgreSQL/PostGIS · SQL Server</span></li>
+        <li><b>Cloud</b><span>AWS · GCP · Docker · Kubernetes · CI/CD</span></li>
+        <li><b>Location</b><span>Bogotá, Colombia (UTC−5) · open to remote</span></li>
+      </ul>
     </div>
   </div>
 </section>
 
-<div class="dv"><div class="dl"></div><span class="dt">Production Systems</span><div class="dl"></div></div>
+<div class="dv" aria-hidden="true"><div class="dl"></div><span class="dt">Production Systems</span><div class="dl"></div></div>
 
 <!-- PROJECTS -->
-<section id="projects" class="sec seca">
-  <div class="sh rv"><span class="sn">02 ·</span><h2 class="s-title">Projects</h2><div class="sr"></div></div>
+<section id="projects" class="sec seca" aria-labelledby="projects-title">
+  <div class="sh rv"><span class="sn">02 ·</span><h2 class="s-title" id="projects-title">Case Studies</h2><div class="sr"></div></div>
+  <p class="lede rv">Three production systems I lead at Procalculo. On all three I'm the Team Lead (8 developers),
+  backend architect, API designer, and owner of the AWS deployment.</p>
+
   <div class="pg">
-    <a href="https://mapas.co/" target="_blank" rel="noopener" class="pc pcj rv">
-      <div class="pi">PRJ-001 · Web Platform</div>
-      <div class="pn">Mapas.co <span class="arr">↗</span></div>
-      <p class="pd">A geospatial web platform delivering geographic information services derived from satellite
-      imagery, GIS analysis, and remote sensing data. Designed for government and enterprise clients who
-      need authoritative spatial data through a clean, accessible interface.
-      <br/><br/>The backend exposes ArcGIS Enterprise feature services and map services via a Django REST
-      Framework middleware layer, enabling frontend clients to query, filter, and visualize spatial datasets
-      without direct ESRI dependency. Deployed on AWS EC2 with Nginx and GitFlow CI/CD.</p>
-      <div class="ptags">
-        <span class="tag">Angular</span><span class="tag">Django DRF</span>
-        <span class="tag">ArcGIS Enterprise</span><span class="tag">PostGIS</span>
-        <span class="tag">AWS EC2</span><span class="tag">Nginx</span>
+
+    <article class="pc pca rv" aria-labelledby="p-abaco">
+      <div class="ph">
+        <p class="pi">PRJ-001 · Deforestation monitoring</p>
+        <p class="pm"><span class="pmv">10M+</span><span class="pml">hectares monitored in the Colombian Amazon</span></p>
+        <h3 class="pn" id="p-abaco">ABACO</h3>
+        <a class="plink" href="https://abaco.procalculo.com/" target="_blank" rel="noopener">abaco.procalculo.com ↗</a>
       </div>
-    </a>
-    <a href="https://abaco.procalculo.com/" target="_blank" rel="noopener" class="pc pca rv">
-      <div class="pi">PRJ-002 · Analysis System</div>
-      <div class="pn">ABACO <span class="arr">↗</span></div>
-      <p class="pd">A production deforestation analysis and monitoring system serving Colombia's environmental
-      agencies and military forces. Processes multi-temporal satellite imagery to detect, classify, and
-      track deforestation events at national scale.
-      <br/><br/>ArcGIS Enterprise provides the geospatial backbone: geoprocessing services run change
-      detection algorithms while feature services expose results. The Django API orchestrates these services,
-      applies raster processing via GDAL and ArcPy, and persists spatial outputs to PostGIS on AWS EKS.</p>
-      <div class="ptags">
-        <span class="tag">ArcGIS Enterprise</span><span class="tag">ArcPy</span>
-        <span class="tag">GDAL</span><span class="tag">Django DRF</span>
-        <span class="tag">PostGIS</span><span class="tag">AWS EKS</span>
+      <dl class="cs">
+        <div><dt>Problem</dt><dd>Forest loss in Guaviare and Caquetá covers more than 10 million hectares,
+          far too much to review by hand. Analysts need detections they can request, check, and track over time.</dd></div>
+        <div><dt>What I built</dt><dd>A production monitoring system that runs change detection on multi-temporal
+          satellite imagery. Analysts submit analysis requests through a Django REST API, ArcGIS Enterprise
+          geoprocessing services run the analysis (ArcPy, GDAL), and results are stored in PostGIS and published
+          as feature services.</dd></div>
+        <div><dt>My role</dt><dd>Team Lead (8 devs) · backend architecture · API design · AWS EKS deployment</dd></div>
+        <div><dt>Results</dt><dd><ul>
+          <li><strong>10M+ hectares</strong> under monitoring in Guaviare and Caquetá</li>
+          <li>Used in production by analysts from <strong>two client organizations</strong></li>
+          <!-- TODO: add a measured result if you have one (e.g. analyses processed per month, turnaround time per request). -->
+        </ul></dd></div>
+        <div><dt>Stack</dt><dd><ul class="ptags">
+          <li class="tag">ArcGIS Enterprise</li><li class="tag">ArcPy</li><li class="tag">GDAL</li>
+          <li class="tag">Django DRF</li><li class="tag">PostGIS</li><li class="tag">AWS EKS</li>
+        </ul></dd></div>
+      </dl>
+    </article>
+
+    <article class="pc pcj rv" aria-labelledby="p-mapas">
+      <div class="ph">
+        <p class="pi">PRJ-002 · Imagery marketplace</p>
+        <p class="pm"><span class="pmv">8</span><span class="pml">satellite imagery providers in one catalog</span></p>
+        <h3 class="pn" id="p-mapas">Mapas.co</h3>
+        <a class="plink" href="https://mapas.co/" target="_blank" rel="noopener">mapas.co ↗</a>
       </div>
-    </a>
-    <a href="https://prisma.procalculo.com/docu/" target="_blank" rel="noopener" class="pc pci rv">
-      <div class="pi">PRJ-003 · Satellite API</div>
-      <div class="pn">Prisma API <span class="arr">↗</span></div>
-      <p class="pd">A satellite image analysis API standardizing access to multi-source imagery — optical
-      and SAR data from Planet and Capella Space. Prisma abstracts tasking, search, and analysis behind
-      a unified REST surface.
-      <br/><br/>ArcGIS Enterprise image services handle tile caching and raster rendering. The Django
-      backend coordinates metadata, spatial indexing, and client endpoints. Designed for e-commerce-style
-      imagery purchasing workflows with Salesforce CRM integration.</p>
-      <div class="ptags">
-        <span class="tag">Django DRF</span><span class="tag">ArcGIS Image Services</span>
-        <span class="tag">Rasterio</span><span class="tag">Planet API</span>
-        <span class="tag">Kubernetes</span><span class="tag">PostgreSQL</span>
+      <dl class="cs">
+        <div><dt>Problem</dt><dd>Buying satellite imagery means dealing with many providers, each with its own
+          catalog, API, and product options. Buyers need one place to find a scene and order the product they need.</dd></div>
+        <div><dt>What I built</dt><dd>A satellite imagery marketplace that integrates 8 providers behind one catalog,
+          with an Angular frontend and a Django REST Framework backend over ArcGIS Enterprise feature and map services.
+          Deployed on AWS EC2 behind Nginx.</dd></div>
+        <div><dt>My role</dt><dd>Team Lead (8 devs) · backend architecture · API design · AWS deployment</dd></div>
+        <div><dt>Results</dt><dd><ul>
+          <li><strong>8 imagery providers</strong> integrated into a single marketplace</li>
+          <li><strong>4+ processing levels and product types</strong> offered per scene</li>
+          <!-- TODO: add a measured result if you have one (e.g. scenes in catalog, orders processed). -->
+        </ul></dd></div>
+        <div><dt>Stack</dt><dd><ul class="ptags">
+          <li class="tag">Angular</li><li class="tag">Django DRF</li><li class="tag">ArcGIS Enterprise</li>
+          <li class="tag">PostGIS</li><li class="tag">AWS EC2</li><li class="tag">Nginx</li>
+        </ul></dd></div>
+      </dl>
+    </article>
+
+    <article class="pc pci rv" aria-labelledby="p-prisma">
+      <div class="ph">
+        <p class="pi">PRJ-003 · Satellite imagery API</p>
+        <p class="pm"><span class="pmv">100+</span><span class="pml">API requests per day in production</span></p>
+        <h3 class="pn" id="p-prisma">Prisma API</h3>
+        <a class="plink" href="https://prisma.procalculo.com/docu/" target="_blank" rel="noopener">API docs ↗</a>
       </div>
-    </a>
+      <dl class="cs">
+        <div><dt>Problem</dt><dd>Optical (Planet) and SAR (Capella Space) providers each expose a different API for
+          search, tasking, and delivery. Integrating each one separately in every client app is slow and brittle.</dd></div>
+        <div><dt>What I built</dt><dd>A unified REST API for multi-source satellite imagery: one interface for search,
+          tasking, and analysis across optical and SAR sources. The Django backend handles metadata, spatial indexing,
+          and client endpoints; ArcGIS image services handle tile caching and raster rendering. It supports
+          e-commerce-style purchasing workflows with Salesforce CRM integration.</dd></div>
+        <div><dt>My role</dt><dd>Team Lead (8 devs) · backend architecture · API design · AWS deployment</dd></div>
+        <div><dt>Results</dt><dd><ul>
+          <!-- TODO: add the year: "In production since YYYY, serving 100+ requests per day". -->
+          <li>In production, serving <strong>100+ requests per day</strong></li>
+          <li><strong>Optical + SAR</strong> imagery (Planet, Capella Space) behind one API</li>
+          <!-- TODO: add uptime % and P95 response time ONLY if measured. -->
+        </ul></dd></div>
+        <div><dt>Stack</dt><dd><ul class="ptags">
+          <li class="tag">Django DRF</li><li class="tag">ArcGIS Image Services</li><li class="tag">Rasterio</li>
+          <li class="tag">Planet API</li><li class="tag">Capella Space API</li>
+          <li class="tag">Kubernetes</li><li class="tag">PostgreSQL</li>
+        </ul></dd></div>
+      </dl>
+    </article>
+
   </div>
 </section>
 
-<div class="dv"><div class="dl"></div><span class="dt">ArcGIS Enterprise Deep Dive</span><div class="dl"></div></div>
+<div class="dv" aria-hidden="true"><div class="dl"></div><span class="dt">Open-source geospatial stack</span><div class="dl"></div></div>
 
-<!-- ARCGIS -->
-<section id="arcgis" class="sec">
-  <div class="sh rv"><span class="sn">03 ·</span><h2 class="s-title">ArcGIS Enterprise Integration</h2><div class="sr"></div></div>
+<!-- GEOSPATIAL ENGINEERING -->
+<section id="geospatial" class="sec" aria-labelledby="geo-title">
+  <div class="sh rv"><span class="sn">03 ·</span><h2 class="s-title" id="geo-title">Geospatial Engineering</h2><div class="sr"></div></div>
   <div class="aot rv">
     <div class="aob">
-      <p>My backend systems treat <strong>ArcGIS Enterprise</strong> as an active geospatial engine —
-      not just a map viewer. It executes analysis, manages spatial layers, runs geoprocessing services,
-      and stores raster datasets, all orchestrated through Python backends.</p>
-      <p>I design <strong>Python middleware APIs</strong> (Django DRF, FastAPI, Flask) that sit between
-      client apps and ArcGIS Enterprise, handling authentication, request routing, spatial validation,
-      and response normalization so frontends stay ESRI-agnostic.</p>
-      <p>Python is the integration language throughout: <strong>arcpy</strong> for deep ArcGIS Pro
-      automation, <strong>arcgis SDK</strong> for REST-based portal and layer access, and
-      <strong>Pydantic</strong> for strict spatial input contracts. All async workers run on
-      <strong>AWS EKS / Kubernetes</strong> keeping synchronous endpoints fast.</p>
+      <p>Most geospatial problems come down to three things: store spatial data so queries stay fast,
+      process large rasters without loading them into memory, and serve maps that stay responsive
+      in the browser.</p>
+      <p>My default toolkit is open source: <strong>PostGIS</strong> for spatial SQL,
+      <strong>GDAL</strong>, <strong>Rasterio</strong>, <strong>GeoPandas</strong> and <strong>Shapely</strong> for processing,
+      <strong>STAC</strong> catalogs and <strong>Cloud Optimized GeoTIFFs</strong> on object storage for imagery,
+      and <strong>MapLibre GL JS</strong> and <strong>deck.gl</strong> on the frontend.</p>
+      <p>Long-running work such as raster processing and provider downloads runs in background workers,
+      so API endpoints stay fast and predictable.</p>
+      <p class="note">The diagram is the reference architecture I design toward. The production stack of each
+      system is listed in its case study above.</p>
     </div>
-    <div class="arch">
-      <div class="al">Client Layer</div>
-      <div class="ar c3">
-        <div class="an top">Angular</div>
-        <div class="an top">React / Next.js</div>
-        <div class="an top">3rd Party</div>
+    <figure class="arch">
+      <figcaption>Reference architecture</figcaption>
+      <div class="al">Client</div>
+      <div class="an top">React / Next.js + MapLibre GL JS<small>deck.gl · Turf.js</small></div>
+      <div class="aa" aria-hidden="true">▼ HTTPS · GeoJSON · vector &amp; raster tiles</div>
+      <div class="al">API &amp; tiles</div>
+      <div class="ar c2">
+        <div class="an core">FastAPI / DRF<small>Auth · validation · GeoJSON</small></div>
+        <div class="an core">Tile server<small>TiTiler (COG) · Martin (PostGIS)</small></div>
       </div>
-      <div class="aa">▼ REST / JSON · GeoJSON</div>
-      <div class="al">Python Backend Middleware</div>
-      <div class="an core">Django DRF · FastAPI · Flask<small>Auth · Routing · Validation · Caching · Workers</small></div>
-      <div class="aa">▼ arcgis SDK · arcpy · REST API</div>
-      <div class="al">ArcGIS Enterprise Services</div>
-      <div class="ar c3">
-        <div class="an">Feature<br/>Services</div>
-        <div class="an">Geoprocessing<br/>Services</div>
-        <div class="an">Image<br/>Services</div>
+      <div class="aa" aria-hidden="true">▼ task queue</div>
+      <div class="al">Processing workers</div>
+      <div class="an">Celery / Kubernetes jobs<small>GDAL · Rasterio · GeoPandas · Shapely</small></div>
+      <div class="aa" aria-hidden="true">▼ SQL · object storage</div>
+      <div class="al">Data</div>
+      <div class="ar c2">
+        <div class="an">PostGIS<small>Vector data · spatial indexes</small></div>
+        <div class="an">S3<small>COGs · STAC catalog</small></div>
       </div>
-      <div class="aa">▼ Registered Data Stores</div>
-      <div class="al">Data Layer</div>
-      <div class="ar c3">
-        <div class="an">Relational<small>PostGIS / SQL Server</small></div>
-        <div class="an">Raster Store<small>S3 / File Share</small></div>
-        <div class="an">Cloud Store<small>AWS S3</small></div>
-      </div>
+    </figure>
+  </div>
+
+  <div class="kit rv">
+    <div class="kc">
+      <h3>Store &amp; catalog</h3>
+      <dl>
+        <div><dt>PostGIS</dt><dd>Spatial SQL, GiST indexes, vector tiles with ST_AsMVT</dd></div>
+        <div><dt>STAC</dt><dd>Searchable catalogs of scenes and assets</dd></div>
+        <div><dt>Cloud Optimized GeoTIFF</dt><dd>Read only the pixels you need with HTTP range requests</dd></div>
+      </dl>
+    </div>
+    <div class="kc">
+      <h3>Process</h3>
+      <dl>
+        <div><dt>GDAL · Rasterio</dt><dd>Raster I/O, reprojection, band math</dd></div>
+        <div><dt>GeoPandas · Shapely</dt><dd>Vector operations and geometry validation</dd></div>
+        <div><dt>Celery · Kubernetes jobs</dt><dd>Heavy processing outside the request path</dd></div>
+      </dl>
+    </div>
+    <div class="kc">
+      <h3>Serve</h3>
+      <dl>
+        <div><dt>TiTiler</dt><dd>Dynamic raster tiles straight from COGs</dd></div>
+        <div><dt>Martin</dt><dd>Vector tiles straight from PostGIS tables</dd></div>
+        <div><dt>FastAPI · DRF</dt><dd>Typed GeoJSON APIs with validated inputs</dd></div>
+      </dl>
+    </div>
+    <div class="kc">
+      <h3>Visualize</h3>
+      <dl>
+        <div><dt>MapLibre GL JS</dt><dd>Vector-tile maps in React and Next.js</dd></div>
+        <div><dt>deck.gl</dt><dd>WebGL layers for large datasets</dd></div>
+        <div><dt>Turf.js</dt><dd>Spatial operations in Node.js and the browser</dd></div>
+      </dl>
     </div>
   </div>
 
-  <div class="agg rv">
+  <div class="rv">
+    <h3 class="xh">Code examples</h3>
+    <div class="xs">
+      <details>
+        <summary><span class="xt"><b>GeoJSON from PostGIS with FastAPI</b><span>Async endpoint, connection pool, Pydantic models, bbox validation</span></span><span class="xl">Python</span></summary>
+        <p>Returns detections inside a bounding box as a GeoJSON FeatureCollection. Credentials come from the
+        environment, queries are parameterized, and every query has a timeout.</p>
+        <div class="cb"><pre><code><span class="cx-kw">import</span> json
+<span class="cx-kw">import</span> os
+<span class="cx-kw">from</span> contextlib <span class="cx-kw">import</span> asynccontextmanager
+<span class="cx-kw">from</span> datetime <span class="cx-kw">import</span> date
+<span class="cx-kw">from</span> typing <span class="cx-kw">import</span> Literal
 
-    <div class="agc">
-      <div class="agh"><span class="ago">⬡</span><span class="agt">Server Integration</span><span class="agb">ArcGIS Server · Portal</span></div>
-      <p class="agp">Integrating ArcGIS Enterprise with Python backends starts with connecting to
-      <strong>Portal for ArcGIS</strong> and <strong>ArcGIS Server</strong> through its REST API surface.
-      I use token-based authentication (built-in or IWA), manage service registration, and orchestrate
-      publishing of map, feature, and geoprocessing services programmatically —
-      eliminating manual ArcGIS Manager steps from CI/CD pipelines.</p>
-      <div class="cb">
-        <div class="cbr"><span class="cbl">python</span>arcgis SDK · portal auth</div>
-        <pre><code><span class="cx-cm"># Connect to ArcGIS Enterprise portal</span>
-<span class="cx-kw">from</span> arcgis.gis <span class="cx-kw">import</span> GIS
+<span class="cx-kw">import</span> asyncpg
+<span class="cx-kw">from</span> fastapi <span class="cx-kw">import</span> FastAPI, HTTPException, Query, Request
+<span class="cx-kw">from</span> pydantic <span class="cx-kw">import</span> BaseModel
 
-gis = GIS(
-    url=<span class="cx-st">"https://arcgis.myorg.co/portal"</span>,
-    username=settings.ARCGIS_USER,
-    password=settings.ARCGIS_PASS,
-    verify_cert=<span class="cx-vl">True</span>
-)
-<span class="cx-cm"># Search and access a published feature service</span>
-item = gis.content.search(
-    <span class="cx-st">"title:deforestation_2024 AND type:Feature Service"</span>,
-    max_items=<span class="cx-vl">1</span>
-)[<span class="cx-vl">0</span>]
-flayer = item.layers[<span class="cx-vl">0</span>]  <span class="cx-cm"># FeatureLayer</span></code></pre>
-      </div>
-    </div>
 
-    <div class="agc">
-      <div class="agh"><span class="ago">⬡</span><span class="agt">Server-Side Library Setup</span><span class="agb">Conda · ArcPy · Python</span></div>
-      <p class="agp">ArcGIS Enterprise ships with its own Python environment managed by <strong>Conda</strong>.
-      I configure server-side environments by cloning the default <code>arcgispro-py3</code> environment,
-      installing geospatial dependencies, and registering the environment with ArcGIS Server so geoprocessing
-      scripts execute with full library access — including <strong>arcpy</strong>, <strong>GDAL</strong>,
-      <strong>Rasterio</strong>, FastAPI, and custom packages.</p>
-      <div class="cb">
-        <div class="cbr"><span class="cbl">bash</span>conda · arcgis server env registration</div>
-        <pre><code><span class="cx-cm"># Clone default env, install geospatial deps</span>
-conda create --name geoenv --clone arcgispro-py3
-conda activate geoenv
+<span class="cx-kw">class</span> DetectionProps(BaseModel):
+    area_ha: float
+    detected_on: date
 
-pip install rasterio gdal shapely geopandas
-pip install arcgis==2.3.0 pydantic fastapi celery
 
-<span class="cx-cm"># Register env with ArcGIS Server (Windows Server)</span>
-cd C:\ArcGIS\Server\tools\PythonEnvManagement
-python RegisterPythonEnv.py \
-  --env C:\conda\envs\geoenv \
-  --serverUrl https://arcgis-server.myorg.co \
-  --username siteadmin</code></pre>
-      </div>
-    </div>
+<span class="cx-kw">class</span> Feature(BaseModel):
+    type: Literal[<span class="cx-st">"Feature"</span>] = <span class="cx-st">"Feature"</span>
+    id: int
+    geometry: dict
+    properties: DetectionProps
 
-    <div class="agc">
-      <div class="agh"><span class="ago">⬡</span><span class="agt">ArcGIS Data Store</span><span class="agb">Relational · Raster · Cloud S3</span></div>
-      <p class="agp">ArcGIS Data Store provides three registered store types I use in production.
-      The <strong>Relational Data Store</strong> (PostgreSQL-based) backs hosted feature layers.
-      The <strong>Raster Data Store</strong> caches imagery tiles for image services.
-      The <strong>Cloud Data Store</strong> (AWS S3) holds large-volume raster collections from Prisma
-      and ABACO pipelines without saturating server disk. I manage registration, backup, and failover
-      on all deployments.</p>
-      <div class="cb">
-        <div class="cbr"><span class="cbl">python</span>register S3 cloud data store via SDK</div>
-        <pre><code><span class="cx-kw">from</span> arcgis.gis <span class="cx-kw">import</span> GIS
 
-gis = GIS(<span class="cx-st">"https://portal.myorg.co"</span>, <span class="cx-st">"admin"</span>, pwd)
+<span class="cx-kw">class</span> FeatureCollection(BaseModel):
+    type: Literal[<span class="cx-st">"FeatureCollection"</span>] = <span class="cx-st">"FeatureCollection"</span>
+    features: list[Feature]
 
-<span class="cx-cm"># Register S3 bucket as cloud data store</span>
-ds_config = {
-    <span class="cx-st">"type"</span>: <span class="cx-st">"cloudStore"</span>,
-    <span class="cx-st">"info"</span>: {
-        <span class="cx-st">"objectStore"</span>: <span class="cx-st">"s3://procalculo-imagery"</span>,
-        <span class="cx-st">"provider"</span>: <span class="cx-st">"amazon"</span>,
-        <span class="cx-st">"region"</span>: <span class="cx-st">"us-east-1"</span>,
-        <span class="cx-st">"credentialType"</span>: <span class="cx-st">"IAMRole"</span>
+
+@asynccontextmanager
+<span class="cx-kw">async</span> <span class="cx-kw">def</span> lifespan(app: FastAPI):
+    <span class="cx-cm"># Credentials come from the environment, never from source code</span>
+    app.state.pool = <span class="cx-kw">await</span> asyncpg.create_pool(
+        os.environ[<span class="cx-st">"DATABASE_URL"</span>], min_size=<span class="cx-vl">1</span>, max_size=<span class="cx-vl">10</span>, command_timeout=<span class="cx-vl">10</span>
+    )
+    <span class="cx-kw">yield</span>
+    <span class="cx-kw">await</span> app.state.pool.close()
+
+
+app = FastAPI(lifespan=lifespan)
+
+<span class="cx-cm"># detections.geom: geometry(MultiPolygon, 4326) with a GiST index</span>
+SQL = <span class="cx-st">"""
+    SELECT id, area_ha, detected_on, ST_AsGeoJSON(geom, 6) AS geometry
+    FROM detections
+    WHERE ST_Intersects(geom, ST_MakeEnvelope($1, $2, $3, $4, 4326))
+    ORDER BY detected_on DESC
+    LIMIT $5
+"""</span>
+
+
+<span class="cx-kw">def</span> parse_bbox(bbox: str) -&gt; tuple[float, float, float, float]:
+    <span class="cx-kw">try</span>:
+        west, south, east, north = (float(v) <span class="cx-kw">for</span> v <span class="cx-kw">in</span> bbox.split(<span class="cx-st">","</span>))
+    <span class="cx-kw">except</span> ValueError:
+        <span class="cx-kw">raise</span> HTTPException(<span class="cx-vl">422</span>, <span class="cx-st">"bbox must be 'west,south,east,north'"</span>) <span class="cx-kw">from</span> <span class="cx-kw">None</span>
+    <span class="cx-kw">if</span> <span class="cx-kw">not</span> (-<span class="cx-vl">180</span> &lt;= west &lt; east &lt;= <span class="cx-vl">180</span> <span class="cx-kw">and</span> -<span class="cx-vl">90</span> &lt;= south &lt; north &lt;= <span class="cx-vl">90</span>):
+        <span class="cx-kw">raise</span> HTTPException(<span class="cx-vl">422</span>, <span class="cx-st">"bbox is outside WGS84 bounds"</span>)
+    <span class="cx-kw">return</span> west, south, east, north
+
+
+@app.get(<span class="cx-st">"/detections"</span>, response_model=FeatureCollection)
+<span class="cx-kw">async</span> <span class="cx-kw">def</span> list_detections(
+    request: Request,
+    bbox: str = Query(..., examples=[<span class="cx-st">"-73.5,1.0,-71.5,3.0"</span>]),
+    limit: int = Query(<span class="cx-vl">500</span>, ge=<span class="cx-vl">1</span>, le=<span class="cx-vl">5000</span>),
+) -&gt; FeatureCollection:
+    rows = <span class="cx-kw">await</span> request.app.state.pool.fetch(SQL, *parse_bbox(bbox), limit)
+    <span class="cx-kw">return</span> FeatureCollection(
+        features=[
+            Feature(
+                id=row[<span class="cx-st">"id"</span>],
+                geometry=json.loads(row[<span class="cx-st">"geometry"</span>]),
+                properties=DetectionProps(
+                    area_ha=row[<span class="cx-st">"area_ha"</span>], detected_on=row[<span class="cx-st">"detected_on"</span>]
+                ),
+            )
+            <span class="cx-kw">for</span> row <span class="cx-kw">in</span> rows
+        ]
+    )</code></pre></div>
+      </details>
+      <details>
+        <summary><span class="xt"><b>Sentinel-2 NDVI to Cloud Optimized GeoTIFF</b><span>Rasterio · Red = B04, NIR = B08 · nodata handling · COG output</span></span><span class="xl">Python</span></summary>
+        <p>Computes NDVI from Sentinel-2 L2A bands, applies the reflectance offset, masks nodata,
+        and writes a compressed COG with internal overviews that TiTiler can serve directly.</p>
+        <div class="cb"><pre><code><span class="cx-kw">import</span> numpy <span class="cx-kw">as</span> np
+<span class="cx-kw">import</span> rasterio
+
+<span class="cx-cm"># Sentinel-2 L2A: reflectance = (DN + offset) / 10000.</span>
+<span class="cx-cm"># Offset is -1000 for processing baseline &gt;= 04.00 (Jan 2022), 0 before.</span>
+QUANTIFICATION = <span class="cx-vl">10_000</span>
+
+
+<span class="cx-kw">def</span> ndvi_to_cog(b04_path: str, b08_path: str, out_path: str, offset: int = -<span class="cx-vl">1000</span>) -&gt; <span class="cx-kw">None</span>:
+    <span class="cx-st">"""NDVI = (NIR - Red) / (NIR + Red) with B08 (NIR) and B04 (Red), both 10 m."""</span>
+    <span class="cx-kw">with</span> rasterio.open(b04_path) <span class="cx-kw">as</span> red_src, rasterio.open(b08_path) <span class="cx-kw">as</span> nir_src:
+        <span class="cx-kw">if</span> red_src.transform != nir_src.transform <span class="cx-kw">or</span> red_src.shape != nir_src.shape:
+            <span class="cx-kw">raise</span> ValueError(<span class="cx-st">"B04 and B08 must share the same 10 m grid"</span>)
+        red_dn, nir_dn = red_src.read(<span class="cx-vl">1</span>), nir_src.read(<span class="cx-vl">1</span>)
+        crs, transform = red_src.crs, red_src.transform
+
+    <span class="cx-kw">def</span> reflectance(dn: np.ndarray) -&gt; np.ndarray:
+        <span class="cx-kw">return</span> np.clip((dn.astype(<span class="cx-st">"float32"</span>) + offset) / QUANTIFICATION, <span class="cx-vl">0</span>, <span class="cx-kw">None</span>)
+
+    red, nir = reflectance(red_dn), reflectance(nir_dn)
+    total = nir + red
+    valid = (red_dn &gt; <span class="cx-vl">0</span>) &amp; (nir_dn &gt; <span class="cx-vl">0</span>) &amp; (total &gt; <span class="cx-vl">0</span>)  <span class="cx-cm"># DN 0 = no data</span>
+
+    ndvi = np.full(red.shape, np.nan, dtype=<span class="cx-st">"float32"</span>)
+    ndvi[valid] = (nir[valid] - red[valid]) / total[valid]
+
+    profile = {
+        <span class="cx-st">"driver"</span>: <span class="cx-st">"COG"</span>,  <span class="cx-cm"># GDAL &gt;= 3.1: tiled, with internal overviews</span>
+        <span class="cx-st">"width"</span>: ndvi.shape[<span class="cx-vl">1</span>],
+        <span class="cx-st">"height"</span>: ndvi.shape[<span class="cx-vl">0</span>],
+        <span class="cx-st">"count"</span>: <span class="cx-vl">1</span>,
+        <span class="cx-st">"dtype"</span>: <span class="cx-st">"float32"</span>,
+        <span class="cx-st">"nodata"</span>: np.nan,
+        <span class="cx-st">"crs"</span>: crs,
+        <span class="cx-st">"transform"</span>: transform,
+        <span class="cx-st">"compress"</span>: <span class="cx-st">"DEFLATE"</span>,
+        <span class="cx-st">"predictor"</span>: <span class="cx-st">"YES"</span>,
+        <span class="cx-st">"blocksize"</span>: <span class="cx-vl">512</span>,
+        <span class="cx-st">"overview_resampling"</span>: <span class="cx-st">"average"</span>,
     }
-}
-gis.datastores.add(ds_config, name=<span class="cx-st">"S3ImageryStore"</span>)</code></pre>
-      </div>
+    <span class="cx-kw">with</span> rasterio.open(out_path, <span class="cx-st">"w"</span>, **profile) <span class="cx-kw">as</span> dst:
+        dst.write(ndvi, <span class="cx-vl">1</span>)
+
+
+<span class="cx-cm"># Inputs can be local files or remote COG hrefs from a Sentinel-2 L2A STAC item</span>
+ndvi_to_cog(<span class="cx-st">"B04.tif"</span>, <span class="cx-st">"B08.tif"</span>, <span class="cx-st">"ndvi_cog.tif"</span>)</code></pre></div>
+      </details>
+      <details>
+        <summary><span class="xt"><b>Vector tiles in React with MapLibre GL JS</b><span>Next.js client component · vector tile source · cleanup on unmount</span></span><span class="xl">TypeScript</span></summary>
+        <p>Loads a vector tile layer (for example from Martin over PostGIS) and removes the map on unmount
+        so the WebGL context isn't leaked.</p>
+        <div class="cb"><pre><code><span class="cx-st">"use client"</span>;
+
+<span class="cx-kw">import</span> { useEffect, useRef } <span class="cx-kw">from</span> <span class="cx-st">"react"</span>;
+<span class="cx-kw">import</span> maplibregl <span class="cx-kw">from</span> <span class="cx-st">"maplibre-gl"</span>;
+<span class="cx-kw">import</span> <span class="cx-st">"maplibre-gl/dist/maplibre-gl.css"</span>;
+
+<span class="cx-kw">type</span> Props = {
+  tilesUrl: string;    <span class="cx-cm">// e.g. "https://tiles.example.com/detections/{z}/{x}/{y}"</span>
+  sourceLayer: string; <span class="cx-cm">// layer name inside the vector tiles, e.g. "detections"</span>
+};
+
+<span class="cx-kw">export</span> <span class="cx-kw">default</span> <span class="cx-kw">function</span> DetectionsMap({ tilesUrl, sourceLayer }: Props) {
+  <span class="cx-kw">const</span> containerRef = useRef&lt;HTMLDivElement&gt;(<span class="cx-kw">null</span>);
+
+  useEffect(() =&gt; {
+    <span class="cx-kw">if</span> (!containerRef.current) <span class="cx-kw">return</span>;
+
+    <span class="cx-kw">const</span> map = <span class="cx-kw">new</span> maplibregl.Map({
+      container: containerRef.current,
+      style: <span class="cx-st">"https://demotiles.maplibre.org/style.json"</span>,
+      center: [-<span class="cx-vl">72.6</span>, <span class="cx-vl">2.0</span>], <span class="cx-cm">// lng, lat</span>
+      zoom: <span class="cx-vl">6</span>,
+    });
+    map.addControl(<span class="cx-kw">new</span> maplibregl.NavigationControl(), <span class="cx-st">"top-right"</span>);
+
+    map.on(<span class="cx-st">"load"</span>, () =&gt; {
+      map.addSource(<span class="cx-st">"detections"</span>, {
+        <span class="cx-kw">type</span>: <span class="cx-st">"vector"</span>,
+        tiles: [tilesUrl],
+        minzoom: <span class="cx-vl">4</span>,
+        maxzoom: <span class="cx-vl">14</span>,
+      });
+      map.addLayer({
+        id: <span class="cx-st">"detections-fill"</span>,
+        <span class="cx-kw">type</span>: <span class="cx-st">"fill"</span>,
+        source: <span class="cx-st">"detections"</span>,
+        <span class="cx-st">"source-layer"</span>: sourceLayer,
+        paint: { <span class="cx-st">"fill-color"</span>: <span class="cx-st">"#ef476f"</span>, <span class="cx-st">"fill-opacity"</span>: <span class="cx-vl">0.4</span> },
+      });
+      map.addLayer({
+        id: <span class="cx-st">"detections-outline"</span>,
+        <span class="cx-kw">type</span>: <span class="cx-st">"line"</span>,
+        source: <span class="cx-st">"detections"</span>,
+        <span class="cx-st">"source-layer"</span>: sourceLayer,
+        paint: { <span class="cx-st">"line-color"</span>: <span class="cx-st">"#ef476f"</span>, <span class="cx-st">"line-width"</span>: <span class="cx-vl">1</span> },
+      });
+    });
+
+    <span class="cx-kw">return</span> () =&gt; map.remove(); <span class="cx-cm">// release the WebGL context on unmount</span>
+  }, [tilesUrl, sourceLayer]);
+
+  <span class="cx-kw">return</span> (
+    &lt;div
+      ref={containerRef}
+      role=<span class="cx-st">"region"</span>
+      aria-label=<span class="cx-st">"Deforestation detections map"</span>
+      style={{ width: <span class="cx-st">"100%"</span>, height: <span class="cx-vl">480</span> }}
+    /&gt;
+  );
+}</code></pre></div>
+      </details>
     </div>
-
-    <div class="agc">
-      <div class="agh"><span class="ago">⬡</span><span class="agt">Push Data via REST API</span><span class="agb">applyEdits · Feature Service</span></div>
-      <p class="agp">I push spatial analysis results and satellite detections directly into ArcGIS Enterprise
-      hosted feature layers using the <strong>applyEdits</strong> REST endpoint. This keeps ABACO deforestation
-      polygons and Prisma detection footprints live and queryable inside the Portal without manual imports.
-      The Django backend batches edits, handles geometry serialization to ESRI JSON, and manages token
-      refresh during long batch operations.</p>
-      <div class="cb">
-        <div class="cbr"><span class="cbl">python</span>applyEdits · REST endpoint · batch push</div>
-        <pre><code><span class="cx-kw">import</span> requests, json
-
-token = requests.post(
-    <span class="cx-st">"https://arcgis.myorg.co/portal/sharing/rest/generateToken"</span>,
-    data={<span class="cx-st">"username"</span>: user, <span class="cx-st">"password"</span>: pwd,
-          <span class="cx-st">"client"</span>: <span class="cx-st">"referer"</span>, <span class="cx-st">"f"</span>: <span class="cx-st">"json"</span>}
-).json()[<span class="cx-st">"token"</span>]
-
-result = requests.post(
-    <span class="cx-st">"https://arcgis.myorg.co/server/rest/services/"</span>
-    <span class="cx-st">"ABACO/FeatureServer/0/applyEdits"</span>,
-    data={
-        <span class="cx-st">"adds"</span>: json.dumps([{
-            <span class="cx-st">"geometry"</span>: {<span class="cx-st">"rings"</span>: rings,
-                           <span class="cx-st">"spatialReference"</span>: {<span class="cx-st">"wkid"</span>: <span class="cx-vl">4326</span>}},
-            <span class="cx-st">"attributes"</span>: {<span class="cx-st">"area_ha"</span>: area,
-                            <span class="cx-st">"confidence"</span>: score,
-                            <span class="cx-st">"source"</span>: <span class="cx-st">"ABACO-v3"</span>}
-        }]),
-        <span class="cx-st">"token"</span>: token, <span class="cx-st">"f"</span>: <span class="cx-st">"json"</span>
-    }
-).json()</code></pre>
-      </div>
-    </div>
-
-    <div class="agc">
-      <div class="agh"><span class="ago">⬡</span><span class="agt">arcgis SDK for Python</span><span class="agb">FeatureLayer · SeDF · Portal</span></div>
-      <p class="agp">The <strong>arcgis</strong> Python SDK provides a high-level object model over the
-      ArcGIS REST API. I use it for querying feature layers into <strong>Spatially Enabled DataFrames</strong>
-      (GeoPandas-compatible), publishing analysis results as new hosted layers, invoking geoprocessing
-      services asynchronously, and managing portal content programmatically. Integrates cleanly into
-      Django management commands and Celery tasks for scheduled sync pipelines.</p>
-      <div class="cb">
-        <div class="cbr"><span class="cbl">python</span>arcgis SDK · FeatureLayer · SeDF · publish</div>
-        <pre><code><span class="cx-kw">from</span> arcgis.gis <span class="cx-kw">import</span> GIS
-<span class="cx-kw">from</span> arcgis.features <span class="cx-kw">import</span> FeatureLayer
-<span class="cx-kw">from</span> arcgis.geometry <span class="cx-kw">import</span> filters
-
-gis = GIS(<span class="cx-st">"https://portal.myorg.co"</span>, token=token)
-layer = FeatureLayer(<span class="cx-st">"https://...server/rest/.../0"</span>, gis=gis)
-
-sdf = layer.query(
-    where=<span class="cx-st">"area_ha > 10 AND confidence >= 0.85"</span>,
-    geometry_filter=filters.intersects(aoi_geom),
-    return_geometry=<span class="cx-vl">True</span>, as_df=<span class="cx-vl">True</span>
-)
-result_sdf = run_analysis_pipeline(sdf)
-result_sdf.spatial.to_featurelayer(
-    title=<span class="cx-st">"ABACO_Results_2024"</span>,
-    gis=gis, folder=<span class="cx-st">"analysis_outputs"</span>
-)</code></pre>
-      </div>
-    </div>
-
-    <div class="agc">
-      <div class="agh"><span class="ago">⬡</span><span class="agt">ArcPy Server Automation</span><span class="agb">Geoprocessing · Raster · Change Detection</span></div>
-      <p class="agp">For operations requiring deep ArcGIS Pro capabilities — multi-temporal change detection,
-      model publishing, toolbox execution — I use <strong>arcpy</strong> in server-side scripts registered
-      as ArcGIS Geoprocessing Services. These run on the ArcGIS Server environment, consume imagery from
-      the Data Store, and write outputs to registered geodatabases. The Django backend triggers them via
-      GP REST calls with async job polling.</p>
-      <div class="cb">
-        <div class="cbr"><span class="cbl">python</span>arcpy · NDVI change detection · RasterToPolygon</div>
-        <pre><code><span class="cx-kw">import</span> arcpy
-
-arcpy.env.workspace = <span class="cx-st">r"\\datastore\imagery\abaco"</span>
-arcpy.env.overwriteOutput = <span class="cx-vl">True</span>
-before = arcpy.Raster(<span class="cx-st">"sentinel_2023_q1.tif"</span>)
-after  = arcpy.Raster(<span class="cx-st">"sentinel_2024_q1.tif"</span>)
-
-<span class="cx-cm"># NDVI = (NIR - RED) / (NIR + RED)</span>
-ndvi_b = (before.getBand(<span class="cx-vl">4</span>) - before.getBand(<span class="cx-vl">3</span>)) / \
-         (before.getBand(<span class="cx-vl">4</span>) + before.getBand(<span class="cx-vl">3</span>))
-ndvi_a = (after.getBand(<span class="cx-vl">4</span>) - after.getBand(<span class="cx-vl">3</span>)) / \
-         (after.getBand(<span class="cx-vl">4</span>) + after.getBand(<span class="cx-vl">3</span>))
-delta = ndvi_a - ndvi_b
-
-loss = arcpy.sa.Con(delta &lt; <span class="cx-vl">-0.15</span>, <span class="cx-vl">1</span>)
-arcpy.conversion.RasterToPolygon(
-    loss, <span class="cx-st">"deforestation_output.shp"</span>, simplify=<span class="cx-vl">True</span>
-)
-arcpy.AddMessage(<span class="cx-st">"Change detection complete"</span>)</code></pre>
-      </div>
-    </div>
-
   </div>
 </section>
 
-<div class="dv"><div class="dl"></div><span class="dt">Full Stack</span><div class="dl"></div></div>
+<div class="dv" aria-hidden="true"><div class="dl"></div><span class="dt">Building in public</span><div class="dl"></div></div>
 
-<!-- STACK -->
-<section id="stack" class="sec seca">
-  <div class="sh rv"><span class="sn">04 ·</span><h2 class="s-title">Tech Stack</h2><div class="sr"></div></div>
+<!-- OPEN SOURCE -->
+<section id="open-source" class="sec seca" aria-labelledby="oss-title">
+  <div class="sh rv"><span class="sn">04 ·</span><h2 class="s-title" id="oss-title">Featured Open-Source Project</h2><div class="sr"></div></div>
+  <article class="oss rv">
+    <div>
+      <span class="soon">Coming soon</span>
+      <!-- TODO: replace with the project's name and a one-line description once the repo is public. -->
+      <h3>Open-source geospatial web app</h3>
+      <p>A public, end-to-end geospatial application built on the open-source stack described above:
+      a Next.js frontend with MapLibre GL JS, a FastAPI backend, and PostGIS for spatial data.</p>
+      <ul class="ptags">
+        <li class="tag">Next.js</li><li class="tag">FastAPI</li><li class="tag">PostGIS</li><li class="tag">MapLibre GL JS</li>
+      </ul>
+    </div>
+    <!-- TODO: replace this link with the repository URL when it's public. -->
+    <a class="btn btn-o" href="https://github.com/posmodernismoSIG/" target="_blank" rel="noopener">Follow on GitHub ↗</a>
+  </article>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="sec" aria-labelledby="skills-title">
+  <div class="sh rv"><span class="sn">05 ·</span><h2 class="s-title" id="skills-title">Skills</h2><div class="sr"></div></div>
   <div class="sg rv">
     <div class="sgc">
-      <div class="sgh">Python Backend</div>
+      <h3>Backend</h3>
       <ul>
-        <li>Django REST Framework</li><li>FastAPI · Flask</li>
-        <li>Pydantic · Celery</li><li>arcgis Python SDK</li>
-        <li>ArcPy automation</li><li>Hexagonal Architecture</li>
-        <li>SOLID principles</li><li>Unit &amp; Integration Testing</li>
+        <li>Python</li><li>Django REST Framework</li><li>FastAPI · Pydantic</li>
+        <li>Celery</li><li>Node.js</li><li>REST API design · OpenAPI</li>
+        <li>Hexagonal architecture · SOLID</li>
       </ul>
     </div>
     <div class="sgc">
-      <div class="sgh">GIS &amp; Remote Sensing</div>
+      <h3>Frontend &amp; maps</h3>
       <ul>
-        <li>ArcGIS Enterprise 11.x</li><li>ArcGIS Pro (.NET / Python)</li>
-        <li>ArcGIS Learn (ML models)</li><li>GDAL / Rasterio</li>
-        <li>PostGIS / pgRouting</li><li>Shapely · GeoPandas</li>
-        <li>Planet API · Capella SAR</li><li>Change detection pipelines</li>
+        <li>TypeScript</li><li>React · Next.js</li><li>Angular</li>
+        <li>MapLibre GL JS</li><li>deck.gl</li><li>Turf.js</li>
       </ul>
     </div>
     <div class="sgc">
-      <div class="sgh">Infrastructure &amp; Cloud</div>
+      <h3>Geospatial &amp; data</h3>
       <ul>
-        <li>AWS EKS / Kubernetes</li><li>Docker · Docker Compose</li>
-        <li>AWS EC2 · Lambda · S3</li><li>CloudFront · Route 53</li>
-        <li>Nginx · Certbot · SSL</li><li>GitFlow · CI/CD</li>
-        <li>SonarQube · Snyk</li><li>AWS Security Hub</li>
+        <li>PostgreSQL / PostGIS</li><li>SQL Server</li>
+        <li>GDAL · Rasterio</li><li>GeoPandas · Shapely</li>
+        <li>STAC · Cloud Optimized GeoTIFF</li><li>TiTiler · Martin</li>
+        <li>Satellite imagery: Sentinel-2, Planet, Capella SAR</li>
+        <li>ArcGIS Enterprise: Portal, Server, ArcPy, arcgis SDK</li>
       </ul>
     </div>
     <div class="sgc">
-      <div class="sgh">Frontend &amp; Data</div>
+      <h3>Cloud &amp; delivery</h3>
       <ul>
-        <li>Angular (TypeScript)</li><li>React · Next.js</li>
-        <li>PostgreSQL · SQL Server</li><li>ArcGIS Maps SDK (JS)</li>
-        <li>Leaflet / OpenLayers</li><li>REST API / OpenAPI</li>
-        <li>Git · GitHub Actions</li><li>Team Leadership</li>
+        <li>AWS: EKS, EC2, Lambda, S3, CloudFront</li><li>GCP</li>
+        <li>Docker · Kubernetes</li><li>GitFlow · CI/CD</li>
+        <li>Code review · mentoring</li><li>Team lead of 8 developers</li>
       </ul>
     </div>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact">
+<section id="contact" aria-labelledby="contact-title">
   <div class="ci rv">
-    <div class="sh" style="justify-content:center">
-      <span class="sn">05 ·</span><h2 class="s-title">Get in Touch</h2>
-    </div>
-    <p>Building something that needs spatial intelligence, satellite imagery integration,
-    or ArcGIS Enterprise backend expertise? I'm open to collaborations,
-    consulting, and interesting geospatial challenges.</p>
+    <div class="sh"><span class="sn">06 ·</span><h2 class="s-title" id="contact-title">Contact</h2></div>
+    <p>I'm looking for remote Senior Geospatial Software Engineer, Senior Full-Stack Engineer, or Tech Lead roles
+    with teams in the US, Canada, or Australia. Email is the fastest way to reach me.</p>
+    <!-- TODO: confirm this is the address you want recruiters to use. -->
+    <a class="cmail" href="mailto:posmodernismo.sig@gmail.com">posmodernismo.sig@gmail.com</a>
     <div class="clinks">
-      <a href="https://github.com/posmodernismoSIG/" class="btn btn-s" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://www.linkedin.com/in/sebastiandiazg/" class="btn btn-o" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="mailto:posmodernismo.sig@gmail.com" class="btn btn-o">Email</a>
+      <a href="mailto:posmodernismo.sig@gmail.com" class="btn btn-s">Email me</a>
+      <a href="/cv/resume.pdf" class="btn btn-o" download>Download resume (PDF)</a>
+      <a href="https://github.com/posmodernismoSIG/" class="btn btn-o" target="_blank" rel="noopener">GitHub ↗</a>
+      <a href="https://www.linkedin.com/in/sebastiandiazg/" class="btn btn-o" target="_blank" rel="noopener">LinkedIn ↗</a>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
+</main>
+
 <footer>
-  <span class="ft">© 2026 · Joan Sebastián · GIS Backend Engineer · Bogotá, Colombia</span>
+  <span class="ft">© 2026 · Joan Sebastián Díaz Gómez · Bogotá, Colombia</span>
   <div class="ftr">
     <span class="ftc"><span>4.7110°N</span> · <span>74.0721°W</span></span>
     <span class="ft">WGS84 · EPSG:4326</span>
@@ -856,24 +1065,38 @@ arcpy.AddMessage(<span class="cx-st">"Change detection complete"</span>)</code><
 </footer>
 
 <script>
-const io = new IntersectionObserver(entries => {
-  entries.forEach((e,i) => {
-    if (e.isIntersecting) {
-      setTimeout(() => e.target.classList.add('on'), i * 65);
-      io.unobserve(e.target);
-    }
-  });
-}, { threshold: 0.08 });
-document.querySelectorAll('.rv').forEach(el => io.observe(el));
+(() => {
+  const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const items = document.querySelectorAll('.rv');
 
-const base = { lat: 4.7110, lng: 74.0721 };
-let t = 0;
-setInterval(() => {
-  t += 0.0001;
-  const lat = (base.lat + Math.sin(t*3) * 0.0003).toFixed(4);
-  const lng = (base.lng + Math.cos(t*2) * 0.0003).toFixed(4);
-  document.getElementById('coord').textContent = lat + '°N · ' + lng + '°W';
-}, 600);
+  if (reduceMotion || !('IntersectionObserver' in window)) {
+    items.forEach(el => el.classList.add('on'));
+  } else {
+    const io = new IntersectionObserver(entries => {
+      entries.forEach((e, i) => {
+        if (!e.isIntersecting) return;
+        setTimeout(() => e.target.classList.add('on'), i * 65);
+        io.unobserve(e.target);
+      });
+    }, { threshold: 0.08 });
+    items.forEach(el => io.observe(el));
+  }
+
+  if (reduceMotion) {
+    document.querySelector('#geo svg')?.pauseAnimations?.();
+    return;
+  }
+
+  const coord = document.getElementById('coord');
+  const base = { lat: 4.7110, lng: 74.0721 };
+  let t = 0;
+  setInterval(() => {
+    t += 0.0001;
+    const lat = (base.lat + Math.sin(t * 3) * 0.0003).toFixed(4);
+    const lng = (base.lng + Math.cos(t * 2) * 0.0003).toFixed(4);
+    coord.textContent = lat + '°N · ' + lng + '°W';
+  }, 600);
+})();
 </script>
 </body>
 </html>
